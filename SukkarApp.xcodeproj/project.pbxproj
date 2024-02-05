@@ -86,6 +86,7 @@
 		A9A713792B261E9D009FD6C2 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A713782B261E9D009FD6C2 /* Login.swift */; };
 		A9A7137B2B263243009FD6C2 /* RegisterError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A7137A2B263243009FD6C2 /* RegisterError.swift */; };
 		A9B283852B6EB54D009E0299 /* K.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B283842B6EB54D009E0299 /* K.swift */; };
+		A9BA5D272B70976400723044 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9BA5D262B70976400723044 /* File.swift */; };
 		A9BB9BA62B1F0A7100F60E89 /* SplashVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9BB9BA42B1F0A7100F60E89 /* SplashVC.swift */; };
 		A9BB9BA72B1F0A7100F60E89 /* SplashVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9BB9BA52B1F0A7100F60E89 /* SplashVC.xib */; };
 		A9BCC9212B1DE80E00A83F87 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9BCC9202B1DE80E00A83F87 /* AppDelegate.swift */; };
@@ -217,6 +218,7 @@
 		A9A713782B261E9D009FD6C2 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
 		A9A7137A2B263243009FD6C2 /* RegisterError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterError.swift; sourceTree = "<group>"; };
 		A9B283842B6EB54D009E0299 /* K.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = K.swift; sourceTree = "<group>"; };
+		A9BA5D262B70976400723044 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 		A9BB9BA42B1F0A7100F60E89 /* SplashVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashVC.swift; sourceTree = "<group>"; };
 		A9BB9BA52B1F0A7100F60E89 /* SplashVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SplashVC.xib; sourceTree = "<group>"; };
 		A9BCC91D2B1DE80E00A83F87 /* SukkarApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SukkarApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -684,6 +686,7 @@
 				A974B85E2B1EC6FB008D4A97 /* Extensions */,
 				A93AA0892B521CAF00FA227F /* DesingSystem */,
 				A93AA08A2B521CDD00FA227F /* Application */,
+				A9BA5D262B70976400723044 /* File.swift */,
 			);
 			path = SukkarApp;
 			sourceTree = "<group>";
@@ -1048,6 +1051,7 @@
 				A96ADFD02B4C8E9A00015DC5 /* ContactCVCell.swift in Sources */,
 				A93AA0942B521ED600FA227F /* String+Extensions.swift in Sources */,
 				A942D0492B348045004D0F89 /* AddressesVC.swift in Sources */,
+				A9BA5D272B70976400723044 /* File.swift in Sources */,
 				A9C0F7CF2B22CDE3004260DE /* MainTB.swift in Sources */,
 				A9B283852B6EB54D009E0299 /* K.swift in Sources */,
 				A9C0F8102B241702004260DE /* UINavigationController+Extension.swift in Sources */,
