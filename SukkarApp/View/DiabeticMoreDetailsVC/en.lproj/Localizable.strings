@@ -1,0 +1,69 @@
+/* 
+  Localizable.strings
+  SukkarApp
+
+  Created by Engy on 1/13/2567 BE.
+  
+*/
+//"BlackFont"="Poppins-Black";
+//"BoldFont"="Poppins-Bold";
+//"ExtraBoldFont"="Poppins-ExtraBold";
+//"LightFont"="Poppins-Light";
+//"MediumFont"="Poppins-Medium";
+//"RegularFont"="Poppins-Regular";
+//"SemiBold"="Poppins-SemiBold";
+"BlackFont"="PingFangSC-Black";
+"BoldFont"="PingFangSC-Bold";
+"ExtraBoldFont"="PingFangSC-ExtraBold";
+"LightFont"="PingFangSC-Ultralight";
+"MediumFont"="PingFangSC-Medium";
+"RegularFont"="PingFangSC-Regular";
+"SemiBold"="PingFangSC-Semibold";
+
+
+
+//Lbls
+"welcomeLbl"="Weclome";
+"continueAsLbl"="Continue as a ";
+"agreeForLbl"="I agree for ";
+
+//TxtField
+
+"emailTF"="Email Address";
+"emailMobileTF"="Email or Mobile";
+"nameTF"="Name";
+"mobileTF"="phone";
+"passwordTF"="password";
+"rePasswordTF"="retype password";
+"oldPasswordTF"="old password";
+"newPasswordTF"="new password";
+"retypeNewPasswordTF"="retype new password";
+"massageTF"="massage";
+
+//Btns
+"guestBtn"="Guest";
+"termsCondtionsBtn"="Terms & Conditions";
+"forgetPasswordBtn"="Forget Password?";
+"loginBtn"="Login";
+"newUserBtn"="Save";
+"RegisterBtn"="Register";
+"SaveBtn"="Send";
+"SendBtn"="Logout";
+
+//alert texts
+
+
+//validate massage
+"nameEmpty"="name is empty";
+"nameVaild"="name not vaild";
+"emailEmpty"="email is empty";
+"emailValid"="email not valid";
+"passwordEmpty"="password is empty";
+"passwordVaild"="password not vaild";
+"reTypeEmpty"="reTypePassword is empty";
+"reTypeVaild"="reType Password not vaild";
+"passwordRetypeEqual"="password  and retype password not equal";
+"mobileVaild"="mobile not vaild";
+"mobileEmpty"="mobile is Empty";
+"termsConditions"="Please agree Terms and Conditions";
+"Succeses"="Succeses";

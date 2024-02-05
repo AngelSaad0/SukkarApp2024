@@ -1,0 +1,64 @@
+/* 
+  Localizable.strings
+  SukkarApp
+
+  Created by Engy on 1/13/2567 BE.
+  
+*/
+"BlackFont"="Cairo-Black";
+"BoldFont"="Cairo-Bold";
+"ExtraBoldFont"="Cairo-Regular_ExtraBold";
+"LightFont"="Cairo-Light";
+"MediumFont"="Cairo-Medium";
+"RegularFont"="Cairo-Regular";
+"SemiBold"="Cairo-SemiBold";
+
+
+//Lbls
+"welcomeLbl"="مرحبا";
+"continueAsLbl"="الانضمام";
+"agreeForLbl"="قبول";
+
+//TxtField
+
+"emailTF"="البريد الإلكتروني";
+"emailMobileTF"="الايميل او الهاتف";
+"nameTF"="اسم المستخدم";
+"mobileTF"="الهاتف";
+"passwordTF"="كلمه السر";
+"rePasswordTF"="اعد كتابه كلمه السر";
+"oldPasswordTF"="كلمه المرور القديمه";
+"newPasswordTF"="كلمه المرور الجديده";
+"retypeNewPasswordTF"="اعد كتابه كلمه المرور الجديده";
+"massageTF"="";
+
+//Btns
+"guestBtn"="كضيف ";
+"termsCondtionsBtn"="الشروط والاحكام ";
+"RegisterBtn"="تسجيل";
+"SaveBtn"="حفظ";
+"SendBtn"="ارسال";
+"loginBtn"="تسجيل الدخول";
+"LogoutBtn"="تسجيل خروج";
+"forgetPasswordBtn"="نسيت كلمه السر؟";
+
+
+//Alert Txt
+
+//validate massage
+"nameEmpty"="الاسم فارغ";
+"nameVaild"="الاسم غير صالح";
+"emailEmpty"="البريد الإلكتروني فارغ";
+"emailValid"="البريد الإلكتروني غير صالح";
+"passwordEmpty"="كلمة المرور فارغة";
+"passwordVaild"="كلمة المرور غير صالحة";
+"reTypeEmpty"="إعادة كتابة كلمة المرور فارغة";
+"reTypeVaild"="إعادة كتابة كلمة المرور غير صالحة";
+"passwordRetypeEqual"="كلمة المرور وإعادة كتابة كلمة المرور غير متساوية";
+"mobileVaild"="الجوال فارغ";
+"mobileEmpty"="الجوال غير صالح";
+"termsConditions"="يرجى الموافقة على الشروط والأحكام";
+"Succeses"="تم التسجيل بنجاح";
+
+
+

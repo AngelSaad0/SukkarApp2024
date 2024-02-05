@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "146D5393-702D-47ED-B8B8-793FD8E64E3F"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "DB81CC97-6B60-48E9-9678-28E57B92CC08"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SukkarApp/View/Offers/OffersVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "11"
+            endingLineNumber = "11"
+            landmarkName = "OffersVC"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "DB81CC97-6B60-48E9-9678-28E57B92CC08 - aa10cfce5faf90f3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SukkarApp.OffersVC.offersCV.getter : Swift.Optional&lt;__C.UICollectionView&gt;"
+                  moduleName = "SukkarApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/amgad/Desktop/SukkarApp/SukkarApp/View/Offers/OffersVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  uuid = "DB81CC97-6B60-48E9-9678-28E57B92CC08 - 825db88cae29fb07"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SukkarApp.OffersVC.offersCV.setter : Swift.Optional&lt;__C.UICollectionView&gt;"
+                  moduleName = "SukkarApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/amgad/Desktop/SukkarApp/SukkarApp/View/Offers/OffersVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "24">
+               </Location>
+               <Location
+                  uuid = "DB81CC97-6B60-48E9-9678-28E57B92CC08 - 9f2d7fea83fb2061"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SukkarApp.OffersVC.offersCV.modify : Swift.Optional&lt;__C.UICollectionView&gt;"
+                  moduleName = "SukkarApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/amgad/Desktop/SukkarApp/SukkarApp/View/Offers/OffersVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "11"
+                  endingLineNumber = "11"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "DB81CC97-6B60-48E9-9678-28E57B92CC08 - 69680824e1e4d15d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SukkarApp.OffersVC.offersCV.modify : Swift.Optional&lt;__C.UICollectionView&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "SukkarApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/amgad/Desktop/SukkarApp/%3Ccompiler-generated%3E"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "28">
+               </Location>
+               <Location
+                  uuid = "DB81CC97-6B60-48E9-9678-28E57B92CC08 - 68943a81d590d5c6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SukkarApp.OffersVC.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; SukkarApp.OffersVC"
+                  moduleName = "SukkarApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/amgad/Desktop/SukkarApp/SukkarApp/View/Offers/OffersVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "11"
+                  endingLineNumber = "11"
+                  offsetFromSymbolStart = "108">
+               </Location>
+               <Location
+                  uuid = "DB81CC97-6B60-48E9-9678-28E57B92CC08 - 7fcec8ec4c2f459"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SukkarApp.OffersVC.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;SukkarApp.OffersVC&gt;"
+                  moduleName = "SukkarApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/amgad/Desktop/SukkarApp/SukkarApp/View/Offers/OffersVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "11"
+                  endingLineNumber = "11"
+                  offsetFromSymbolStart = "84">
+               </Location>
+               <Location
+                  uuid = "DB81CC97-6B60-48E9-9678-28E57B92CC08 - 7a5a87d05c788fb6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SukkarApp.OffersVC.offersCV.getter : Swift.Optional&lt;__C.UICollectionView&gt;"
+                  moduleName = "SukkarApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/amgad/Desktop/SukkarApp%202%203/SukkarApp/View/Offers/OffersVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  uuid = "DB81CC97-6B60-48E9-9678-28E57B92CC08 - 5217f092adfee442"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SukkarApp.OffersVC.offersCV.setter : Swift.Optional&lt;__C.UICollectionView&gt;"
+                  moduleName = "SukkarApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/amgad/Desktop/SukkarApp%202%203/SukkarApp/View/Offers/OffersVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "24">
+               </Location>
+               <Location
+                  uuid = "DB81CC97-6B60-48E9-9678-28E57B92CC08 - 4f6737f4802c032a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SukkarApp.OffersVC.offersCV.modify : Swift.Optional&lt;__C.UICollectionView&gt;"
+                  moduleName = "SukkarApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/amgad/Desktop/SukkarApp%202%203/SukkarApp/View/Offers/OffersVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "11"
+                  endingLineNumber = "11"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "DB81CC97-6B60-48E9-9678-28E57B92CC08 - d80bd6195470cf56"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SukkarApp.OffersVC.offersCV.modify : Swift.Optional&lt;__C.UICollectionView&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "SukkarApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/amgad/Desktop/SukkarApp%202%203/%3Ccompiler-generated%3E"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "28">
+               </Location>
+               <Location
+                  uuid = "DB81CC97-6B60-48E9-9678-28E57B92CC08 - b8de729fd647f68d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SukkarApp.OffersVC.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; SukkarApp.OffersVC"
+                  moduleName = "SukkarApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/amgad/Desktop/SukkarApp%202%203/SukkarApp/View/Offers/OffersVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "11"
+                  endingLineNumber = "11"
+                  offsetFromSymbolStart = "108">
+               </Location>
+               <Location
+                  uuid = "DB81CC97-6B60-48E9-9678-28E57B92CC08 - d7b6a490c715d712"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SukkarApp.OffersVC.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;SukkarApp.OffersVC&gt;"
+                  moduleName = "SukkarApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/amgad/Desktop/SukkarApp%202%203/SukkarApp/View/Offers/OffersVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "11"
+                  endingLineNumber = "11"
+                  offsetFromSymbolStart = "84">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E5D3AB61-05BD-4035-92BD-62CC0F596F18"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SukkarApp/View/Account/AccountVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "89"
+            endingLineNumber = "89"
+            landmarkName = "goToViewController(index:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9877AE60-5E17-444A-8ED5-A46BE82F30B7"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SukkarApp/Core/Extensions/UITextField+Extension.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "66"
+            endingLineNumber = "66"
+            landmarkName = "addLowerLine(withColor:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A5C1E4D0-3470-44A6-9167-1CF54922CFA5"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Application/AppDelegate.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "14"
+            endingLineNumber = "14"
+            landmarkName = "application(_:didFinishLaunchingWithOptions:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E42C39A6-5FB7-45C8-8997-4A1EA6A6BDB7"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SukkarApp/Features/Sukkar/View/Register/RegisterVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "46"
+            endingLineNumber = "46"
+            landmarkName = "agreeBtnClicked(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
