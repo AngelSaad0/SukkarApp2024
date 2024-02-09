@@ -9,7 +9,7 @@ import UIKit
 import MOLH
 
 extension UITextField {
-//MARK: - customTxtField
+//MARK: - customTxtFmield
     func customTxtField(txtColor: Colors = .C9E9E9E ,placeholderColor: Colors = .C9E9E9E , size: Size = .size_14, font: Fonts = .Regular, placeholder: TxtFields, text: String? = "", isPassword: Bool = false, isCenter: Bool = false) {
         let size = iPhoneXFactor*(CGFloat(size.rawValue))
         self.tintColor = UIColor(named: txtColor.rawValue)

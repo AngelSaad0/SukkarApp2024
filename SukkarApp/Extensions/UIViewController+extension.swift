@@ -8,6 +8,28 @@
 import UIKit
 import SideMenu
 extension UIViewController{
+    //MARK: - Create alert controller 
+   public func creatAlertController(title:String, message:String,actionBtnTitle:String,cancelBtnTitle:String,placholder:String,style:UIAlertController.Style){
+            let alertController = UIAlertController(title: title, message: message, preferredStyle: style)
+            
+            let actionBtn = UIAlertAction(title: actionBtnTitle, style: .default) { action in
+                actionHandler()
+            }
+            let cancelBtn = UIAlertAction(title: cancelBtnTitle, style: .default) { action in
+                cancelHandler()
+            }
+            alertController.addAction(actionBtn)
+            alertController.addAction(cancelBtn)
+            present(alertController, animated: true, completion: nil)
+            func actionHandler(){
+         
+            }
+           func cancelHandler(){
+                
+            }
+            
+        }
+      
 //MARK: - createNavTabBar
         func createNavTabBar(vc:UIViewController,image:String,title:String) -> UINavigationController{
             let nav = UINavigationController(rootViewController: vc)

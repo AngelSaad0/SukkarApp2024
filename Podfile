@@ -14,6 +14,8 @@ target 'SukkarApp' do
   pod 'IQKeyboardManagerSwift'
   pod 'CLTypingLabel'
   pod 'SwiftyJSON'
+  pod 'SwiftLint'
+
 
 
   # pod 'SteviaLayout', '4.5.0'

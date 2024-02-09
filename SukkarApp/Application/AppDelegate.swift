@@ -17,9 +17,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         IQKeyboardManager.shared.enable = true
         window = UIWindow(frame: UIScreen.main.bounds)
         if UserDefault.shared.continueAsAGuest || UserDefault.shared.isLogin {
-            window?.rootViewController = UINavigationController(rootViewController:LoginVC())
+            window?.rootViewController = UINavigationController(rootViewController:AddressesVC())
         } else{
-            window?.rootViewController = UINavigationController(rootViewController:LoginVC())
+            window?.rootViewController = UINavigationController(rootViewController:AddressesVC())
         }
         window?.makeKeyAndVisible()
         return true

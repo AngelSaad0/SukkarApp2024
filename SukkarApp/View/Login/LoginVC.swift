@@ -119,6 +119,7 @@ extension LoginVC{
                     case 200:
                         do{
                             let successData = try JSONDecoder().decode(Login.self, from: data)
+                            displayMessage(msgString: "welcome", isError:false )
                            
                         }catch let error {
                             print(error)

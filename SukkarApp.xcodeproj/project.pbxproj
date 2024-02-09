@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		47EF5CF9A33AFDDA9AF7D709 /* Pods_SukkarApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5917BE5733A63745FF106161 /* Pods_SukkarApp.framework */; };
+		8DB499A637F9E9B459755114 /* Pods_SukkarApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 025F13D61BA6FF6632A7B9CE /* Pods_SukkarApp.framework */; };
 		A90FAB042B48449900C09F6B /* KHTxtField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90FAB032B48449900C09F6B /* KHTxtField.swift */; };
 		A930D1CC2B5301D100A39E6C /* BTNs.swift in Sources */ = {isa = PBXBuildFile; fileRef = A930D1CB2B5301D100A39E6C /* BTNs.swift */; };
 		A930D1CE2B5305F200A39E6C /* TxtFields.swift in Sources */ = {isa = PBXBuildFile; fileRef = A930D1CD2B5305F200A39E6C /* TxtFields.swift */; };
@@ -86,7 +86,6 @@
 		A9A713792B261E9D009FD6C2 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A713782B261E9D009FD6C2 /* Login.swift */; };
 		A9A7137B2B263243009FD6C2 /* RegisterError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A7137A2B263243009FD6C2 /* RegisterError.swift */; };
 		A9B283852B6EB54D009E0299 /* K.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B283842B6EB54D009E0299 /* K.swift */; };
-		A9BA5D272B70976400723044 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9BA5D262B70976400723044 /* File.swift */; };
 		A9BB9BA62B1F0A7100F60E89 /* SplashVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9BB9BA42B1F0A7100F60E89 /* SplashVC.swift */; };
 		A9BB9BA72B1F0A7100F60E89 /* SplashVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9BB9BA52B1F0A7100F60E89 /* SplashVC.xib */; };
 		A9BCC9212B1DE80E00A83F87 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9BCC9202B1DE80E00A83F87 /* AppDelegate.swift */; };
@@ -134,9 +133,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		052A074DBFC0E40B68C87961 /* Pods-SukkarApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SukkarApp.debug.xcconfig"; path = "Target Support Files/Pods-SukkarApp/Pods-SukkarApp.debug.xcconfig"; sourceTree = "<group>"; };
-		31D25132D743D018FACA6775 /* Pods-SukkarApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SukkarApp.release.xcconfig"; path = "Target Support Files/Pods-SukkarApp/Pods-SukkarApp.release.xcconfig"; sourceTree = "<group>"; };
-		5917BE5733A63745FF106161 /* Pods_SukkarApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SukkarApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		025F13D61BA6FF6632A7B9CE /* Pods_SukkarApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SukkarApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		76C6FA5F724C0F2C5061BEC0 /* Pods-SukkarApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SukkarApp.release.xcconfig"; path = "Target Support Files/Pods-SukkarApp/Pods-SukkarApp.release.xcconfig"; sourceTree = "<group>"; };
 		A90FAB032B48449900C09F6B /* KHTxtField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KHTxtField.swift; sourceTree = "<group>"; };
 		A930D1CB2B5301D100A39E6C /* BTNs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BTNs.swift; sourceTree = "<group>"; };
 		A930D1CD2B5305F200A39E6C /* TxtFields.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TxtFields.swift; sourceTree = "<group>"; };
@@ -218,7 +216,6 @@
 		A9A713782B261E9D009FD6C2 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
 		A9A7137A2B263243009FD6C2 /* RegisterError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterError.swift; sourceTree = "<group>"; };
 		A9B283842B6EB54D009E0299 /* K.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = K.swift; sourceTree = "<group>"; };
-		A9BA5D262B70976400723044 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 		A9BB9BA42B1F0A7100F60E89 /* SplashVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashVC.swift; sourceTree = "<group>"; };
 		A9BB9BA52B1F0A7100F60E89 /* SplashVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SplashVC.xib; sourceTree = "<group>"; };
 		A9BCC91D2B1DE80E00A83F87 /* SukkarApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SukkarApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -264,6 +261,7 @@
 		A9EC4D8B2B4762C70059E50C /* ChangePasswordVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChangePasswordVC.xib; sourceTree = "<group>"; };
 		A9FA565D2B5DFDDE00A926AA /* kNavBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kNavBar.swift; sourceTree = "<group>"; };
 		A9FA565F2B5DFDE600A926AA /* kNavBar.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = kNavBar.xib; sourceTree = "<group>"; };
+		CC061DFE13F6026FE2E8FAA7 /* Pods-SukkarApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SukkarApp.debug.xcconfig"; path = "Target Support Files/Pods-SukkarApp/Pods-SukkarApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -271,28 +269,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				47EF5CF9A33AFDDA9AF7D709 /* Pods_SukkarApp.framework in Frameworks */,
+				8DB499A637F9E9B459755114 /* Pods_SukkarApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		5E8BE53E3E88B2D8EE330538 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				5917BE5733A63745FF106161 /* Pods_SukkarApp.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		630D5815F4CC29E84DD7C830 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				052A074DBFC0E40B68C87961 /* Pods-SukkarApp.debug.xcconfig */,
-				31D25132D743D018FACA6775 /* Pods-SukkarApp.release.xcconfig */,
+				CC061DFE13F6026FE2E8FAA7 /* Pods-SukkarApp.debug.xcconfig */,
+				76C6FA5F724C0F2C5061BEC0 /* Pods-SukkarApp.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		899088E6724CBC66A95D2E5E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				025F13D61BA6FF6632A7B9CE /* Pods_SukkarApp.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		A939A0342B3F6C1D00FCF287 /* OrdersDetailsVC */ = {
@@ -674,7 +672,7 @@
 				A9BCC91F2B1DE80E00A83F87 /* SukkarApp */,
 				A9795AFE2B6CA567008E96CF /*  Info.plist */,
 				630D5815F4CC29E84DD7C830 /* Pods */,
-				5E8BE53E3E88B2D8EE330538 /* Frameworks */,
+				899088E6724CBC66A95D2E5E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -686,7 +684,6 @@
 				A974B85E2B1EC6FB008D4A97 /* Extensions */,
 				A93AA0892B521CAF00FA227F /* DesingSystem */,
 				A93AA08A2B521CDD00FA227F /* Application */,
-				A9BA5D262B70976400723044 /* File.swift */,
 			);
 			path = SukkarApp;
 			sourceTree = "<group>";
@@ -852,11 +849,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A9BCC9312B1DE80F00A83F87 /* Build configuration list for PBXNativeTarget "SukkarApp" */;
 			buildPhases = (
-				76AD07F1A1A21170784CA886 /* [CP] Check Pods Manifest.lock */,
+				C947B35638D39CF3FF64C5F5 /* [CP] Check Pods Manifest.lock */,
 				A9BCC9192B1DE80E00A83F87 /* Sources */,
 				A9BCC91A2B1DE80E00A83F87 /* Frameworks */,
 				A9BCC91B2B1DE80E00A83F87 /* Resources */,
-				D3073D479BE7F7304BFEAB24 /* [CP] Embed Pods Frameworks */,
+				76B2C9DE1FBE3B38FD2887D6 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -956,7 +953,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		76AD07F1A1A21170784CA886 /* [CP] Check Pods Manifest.lock */ = {
+		76B2C9DE1FBE3B38FD2887D6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SukkarApp/Pods-SukkarApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SukkarApp/Pods-SukkarApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SukkarApp/Pods-SukkarApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C947B35638D39CF3FF64C5F5 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -976,23 +990,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		D3073D479BE7F7304BFEAB24 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SukkarApp/Pods-SukkarApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SukkarApp/Pods-SukkarApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SukkarApp/Pods-SukkarApp-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -1051,7 +1048,6 @@
 				A96ADFD02B4C8E9A00015DC5 /* ContactCVCell.swift in Sources */,
 				A93AA0942B521ED600FA227F /* String+Extensions.swift in Sources */,
 				A942D0492B348045004D0F89 /* AddressesVC.swift in Sources */,
-				A9BA5D272B70976400723044 /* File.swift in Sources */,
 				A9C0F7CF2B22CDE3004260DE /* MainTB.swift in Sources */,
 				A9B283852B6EB54D009E0299 /* K.swift in Sources */,
 				A9C0F8102B241702004260DE /* UINavigationController+Extension.swift in Sources */,
@@ -1221,7 +1217,7 @@
 		};
 		A9BCC9322B1DE80F00A83F87 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 052A074DBFC0E40B68C87961 /* Pods-SukkarApp.debug.xcconfig */;
+			baseConfigurationReference = CC061DFE13F6026FE2E8FAA7 /* Pods-SukkarApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -1249,7 +1245,7 @@
 		};
 		A9BCC9332B1DE80F00A83F87 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 31D25132D743D018FACA6775 /* Pods-SukkarApp.release.xcconfig */;
+			baseConfigurationReference = 76C6FA5F724C0F2C5061BEC0 /* Pods-SukkarApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

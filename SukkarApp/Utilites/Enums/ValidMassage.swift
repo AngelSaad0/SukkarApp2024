@@ -7,7 +7,7 @@
 
 import Foundation
 public enum ValidMassage: String {
- 
+   case none = ""
    case NameEmpty = "nameEmpty"
    case NameVaild =  "nameVaild"
    case EmailEmpty = "emailEmpty"

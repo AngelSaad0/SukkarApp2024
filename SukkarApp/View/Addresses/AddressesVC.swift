@@ -23,37 +23,29 @@ class AddressesVC: UIViewController {
     }
   
     @IBAction func addNewAddresse(_ sender: UIBarButtonItem) {
-//        let alert =  UIAlertController(title: "add new address", message: "choose one option", preferredStyle: .alert)
-//        let addAction = UIAlertAction(title: "add", style: .default) { action in
-//           
-//           
-//        }
-//        let cancelAction = UIAlertAction(title: "cancel", style: .default) { action in
-//            
-//        }
+       creatAlertController(title: "add new address", message: "do you want to add new address", actionBtnTitle: "add", cancelBtnTitle: "cancel", placholder: "type your address here", style: .alert)
+    
+        
         
     }
     
     @IBAction func addressInDetalisBtnClicked(_ sender: UIBarButtonItem){
-//        let title: String = !isEnglish() ? ("اضافه عنوان جديد"):("add new address")
-//        let msg: String = !isEnglish() ? ("اختر خيارًا"):("choose one option")
-
-        let alert =  UIAlertController(title: "add new address", message: "choose one option", preferredStyle: .actionSheet)
-        let addAction = UIAlertAction(title: "add", style: .default) { action in
-            let vc = AddAddressesVC()
-            self.navigationController?.pushViewController(vc, animated: true)
-        }
-        let cancelAction = UIAlertAction(title: "cancel", style: .default) { action in
-            
-        }
-        alert.addAction(addAction)
-        alert.addAction(cancelAction)
-        present(alert, animated: true)
-
-        alert.setAlertTitle(font: Fonts.Black, color: Colors.C3D8E08, size: Size.size_5)
-        alert.setAlertMessage(font: Fonts.Black, color: Colors.CC328B9, size: Size.size_5)
-        alert.setAlertTint(color: Colors.C3D8E08)
-        alert.setAlertBackgroundColor(color: Colors.CF0E1EF, alpha:  1, cornerRadius: 8)
+        
+       creatAlertController(title: "add new address", message: "choose one option", actionBtnTitle: "add", cancelBtnTitle: "cancel", placholder: "type some thingHere", style: .actionSheet)
+      
+        
+//        let alert =  UIAlertController(title: "add new address", message: "choose one option", preferredStyle: .actionSheet)
+//        let addAction = UIAlertAction(title: "add", style: .default) { action in
+//
+//        }
+//        let cancelAction = UIAlertAction(title: "cancel", style: .default) { action in
+//            
+//        }
+//      
+//        alert.setAlertTitle(font: Fonts.Black, color: Colors.C3D8E08, size: Size.size_5)
+//        alert.setAlertMessage(font: Fonts.Black, color: Colors.CC328B9, size: Size.size_5)
+//        alert.setAlertTint(color: Colors.C3D8E08)
+//        alert.setAlertBackgroundColor(color: Colors.CF0E1EF, alpha:  1, cornerRadius: 8)
 
     }
 }

@@ -7,6 +7,7 @@
 
 import Foundation
 struct K{
+   
     static let username_or_email = "username_or_email"
     static let password = "password"
     
@@ -17,5 +18,8 @@ struct K{
     static let  date_of_birth =  "date_of_birth"
     static let  gender =  "gender"
     static let  role_ids = "role_ids"
+    
+    
+    static let  noneVC = ""
     
 }
