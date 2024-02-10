@@ -95,55 +95,7 @@ extension RegisterVC{
 
     //get get Register Data
     func getRegisterData(){
-        var customer : [String: Any] = [:]
-        customer[K.first_name] = nameTxtField.text ?? ""
-        customer[K.last_name] = nameTxtField.text ?? ""
-        customer[K.email] = emailTxtField.text ?? ""
-        customer[K.phone] = mobileTxtField.text ?? ""
-        customer[K.date_of_birth] = ""
-        customer[K.gender] = "M"
-        customer[K.password] = passwordTxtField.text ?? ""
-        customer[K.role_ids] = [3]
-        let parameters = [
-            "customer": customer
-        ]
-        //1.URL 2.Method 3.parameters 4.encoding 5.headers
-        
-        AF.request(Config.LOGIN, method: .post, parameters: parameters, encoding: URLEncoding.default, headers: headers).responseString { response in
-            switch response.result {
-             case .success(let success):
-                print(success)
-                if let data = response.data , !data.isEmpty {
-                    switch response.response?.statusCode {
-                    case 200:
-                        do{
-                            let successData = try JSONDecoder().decode(Login.self, from: data)
-                            let successMsg = successData.customers?.first?.first_name ?? ""
-                            print(successMsg)
-                            displayMessage(message:.Succeses, isError: false)
-                        }catch let error {
-                            print(error)
-                        }
-                    default:
-                        do{
-                            let errorData = try JSONDecoder().decode(RegisterError.self, from: data)
-                            let errorMsg = errorData.errors?.email?.first ?? ""
-                            displayMessage(message:.EmailValid, isError: false)
-                           
-                        } catch let error {
-                            print(error)
-                        }
-                       
-                    }
-                 
-                }
-            case .failure(let failure):
-                print(failure.localizedDescription)
-            }
-            
-        }
-        
-        
+       
     }
     
     // validateRegisterFields

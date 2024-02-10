@@ -99,51 +99,7 @@ extension LoginVC{
     
     //getLoginData
     func getLoginData(){
-        let email = emailTxtField.text ?? ""
-        let password = passwordTxtField.text ?? ""
-        
-        let parameters = [
-            K.username_or_email:email,
-            K.password:password
-        ]
-        
-        //1.URL 2.Method 3.parameters 4.encoding 5.headers
-        
-        AF.request(Config.LOGIN, method: .get, parameters: parameters, encoding: URLEncoding.queryString, headers: headers).responseString { response in
-            switch response.result {
-                
-            case .success(let success):
-                print(success)
-                if let data = response.data , !data.isEmpty {
-                    switch response.response?.statusCode {
-                    case 200:
-                        do{
-                            let successData = try JSONDecoder().decode(Login.self, from: data)
-                            displayMessage(msgString: "welcome", isError:false )
-                           
-                        }catch let error {
-                            print(error)
-                        }
-                        
-                    default:
-                        do{
-                            let errorData = try JSONDecoder().decode(LoginError.self, from: data)
-                           
-                            
-                        } catch let error {
-                            print(error)
-                        }
-                       
-                    }
-                 
-                }
-            case .failure(let failure):
-                print(failure.localizedDescription)
-            }
-            
-        }
-        
-        
+       
     }
    //validate Login Fields
     func validateLoginFields()-> Bool{
