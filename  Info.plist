@@ -5,6 +5,7 @@
 	<key>UIAppFonts</key>
 	<array>
 		<string>Sen-VariableFont_wght.ttf</string>
+		<string>Cairo-VariableFont_slnt,wght</string>
 	</array>
 </dict>
 </plist>

@@ -12,7 +12,7 @@ class OffersVC: UIViewController {
     @IBOutlet weak var offersPageControl: UIPageControl!
     //    @IBOutlet weak var offersPageControl: UIPageControl!
 //    @IBOutlet weak var offersCV: UICollectionView!
-    let offersList = ["img5","img5","img5","img5","img5",]
+    let offersList = ["img5","img5","img5","img5","img5"]
     var currentPage = 0
     var timer:Timer?
     override func viewDidLoad() {

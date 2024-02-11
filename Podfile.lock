@@ -4,9 +4,10 @@ PODS:
   - IQKeyboardManagerSwift (7.0.1)
   - MOLH (1.4.3)
   - SideMenu (6.5.0)
-  - SwiftMessages (9.0.9):
-    - SwiftMessages/App (= 9.0.9)
-  - SwiftMessages/App (9.0.9)
+  - SwiftLint (0.54.0)
+  - SwiftMessages (10.0.0):
+    - SwiftMessages/App (= 10.0.0)
+  - SwiftMessages/App (10.0.0)
   - SwiftyJSON (5.0.1)
 
 DEPENDENCIES:
@@ -15,6 +16,7 @@ DEPENDENCIES:
   - IQKeyboardManagerSwift
   - MOLH
   - SideMenu
+  - SwiftLint
   - SwiftMessages
   - SwiftyJSON
 
@@ -25,6 +27,7 @@ SPEC REPOS:
     - IQKeyboardManagerSwift
     - MOLH
     - SideMenu
+    - SwiftLint
     - SwiftMessages
     - SwiftyJSON
 
@@ -34,9 +37,10 @@ SPEC CHECKSUMS:
   IQKeyboardManagerSwift: 7f6b1b1d1497855d2beea7f2f10ffcc6978525b1
   MOLH: e45827d200aeb1310641090fd8cd03ad2b42ae72
   SideMenu: f583187d21c5b1dd04c72002be544b555a2627a2
-  SwiftMessages: 1a23aef303fa7bb26ad802880746cf8358e378fe
+  SwiftLint: c1de071d9d08c8aba837545f6254315bc900e211
+  SwiftMessages: d3540f0f981dfbac25bd2ae9a662effa48f76f92
   SwiftyJSON: 2f33a42c6fbc52764d96f13368585094bfd8aa5e
 
-PODFILE CHECKSUM: cff81cb88afcbabf00b21dba881ac2b390e91115
+PODFILE CHECKSUM: 7a7450c0d19b5eb5b1b2e9870ac21718413c397a
 
-COCOAPODS: 1.14.3
+COCOAPODS: 1.15.2

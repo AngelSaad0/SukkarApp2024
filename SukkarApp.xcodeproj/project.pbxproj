@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8DB499A637F9E9B459755114 /* Pods_SukkarApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 025F13D61BA6FF6632A7B9CE /* Pods_SukkarApp.framework */; };
+		8933EF8EE48147AEF76B013F /* Pods_SukkarApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8769104800DF4FC9D182E0E /* Pods_SukkarApp.framework */; };
 		A90FAB042B48449900C09F6B /* KHTxtField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90FAB032B48449900C09F6B /* KHTxtField.swift */; };
+		A91BE5E02B7869B300314B52 /* NavBarImg.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91BE5DF2B7869B300314B52 /* NavBarImg.swift */; };
 		A930D1CC2B5301D100A39E6C /* BTNs.swift in Sources */ = {isa = PBXBuildFile; fileRef = A930D1CB2B5301D100A39E6C /* BTNs.swift */; };
 		A930D1CE2B5305F200A39E6C /* TxtFields.swift in Sources */ = {isa = PBXBuildFile; fileRef = A930D1CD2B5305F200A39E6C /* TxtFields.swift */; };
 		A930D1D22B53163D00A39E6C /* SystemColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = A930D1D12B53163D00A39E6C /* SystemColors.swift */; };
@@ -111,9 +112,7 @@
 		A9C5BE7A2B24978800CBC2ED /* CategoriesHomeVCCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9C5BE782B24978800CBC2ED /* CategoriesHomeVCCell.xib */; };
 		A9C5BE7D2B2497A800CBC2ED /* FeaturedCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C5BE7B2B2497A800CBC2ED /* FeaturedCVCell.swift */; };
 		A9C5BE7E2B2497A800CBC2ED /* FeaturedCVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9C5BE7C2B2497A800CBC2ED /* FeaturedCVCell.xib */; };
-		A9D15B872B5CA3600086069E /* NAV_BAR.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D15B862B5CA3600086069E /* NAV_BAR.swift */; };
-		A9D15B892B5CAC190086069E /* NavBarTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D15B882B5CAC190086069E /* NavBarTitle.swift */; };
-		A9D15B8B2B5CC1FE0086069E /* NavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D15B8A2B5CC1FE0086069E /* NavBar.swift */; };
+		A9D15B872B5CA3600086069E /* NavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D15B862B5CA3600086069E /* NavBar.swift */; };
 		A9D15B8D2B5CC3320086069E /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D15B8C2B5CC3320086069E /* Images.swift */; };
 		A9D568B22B6E580B0084D4EA /* PontanoSans-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A9D568B12B6E580B0084D4EA /* PontanoSans-VariableFont_wght.ttf */; };
 		A9D568B52B6E59020084D4EA /* Montserrat-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A9D568B32B6E59020084D4EA /* Montserrat-VariableFont_wght.ttf */; };
@@ -133,9 +132,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		025F13D61BA6FF6632A7B9CE /* Pods_SukkarApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SukkarApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		76C6FA5F724C0F2C5061BEC0 /* Pods-SukkarApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SukkarApp.release.xcconfig"; path = "Target Support Files/Pods-SukkarApp/Pods-SukkarApp.release.xcconfig"; sourceTree = "<group>"; };
+		095054BF9E98544F5EEC0A5F /* Pods-SukkarApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SukkarApp.release.xcconfig"; path = "Target Support Files/Pods-SukkarApp/Pods-SukkarApp.release.xcconfig"; sourceTree = "<group>"; };
+		9745D9A43F859E59F803126D /* Pods-SukkarApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SukkarApp.debug.xcconfig"; path = "Target Support Files/Pods-SukkarApp/Pods-SukkarApp.debug.xcconfig"; sourceTree = "<group>"; };
 		A90FAB032B48449900C09F6B /* KHTxtField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KHTxtField.swift; sourceTree = "<group>"; };
+		A91BE5DF2B7869B300314B52 /* NavBarImg.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavBarImg.swift; sourceTree = "<group>"; };
 		A930D1CB2B5301D100A39E6C /* BTNs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BTNs.swift; sourceTree = "<group>"; };
 		A930D1CD2B5305F200A39E6C /* TxtFields.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TxtFields.swift; sourceTree = "<group>"; };
 		A930D1D12B53163D00A39E6C /* SystemColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemColors.swift; sourceTree = "<group>"; };
@@ -242,8 +242,7 @@
 		A9C5BE782B24978800CBC2ED /* CategoriesHomeVCCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoriesHomeVCCell.xib; sourceTree = "<group>"; };
 		A9C5BE7B2B2497A800CBC2ED /* FeaturedCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedCVCell.swift; sourceTree = "<group>"; };
 		A9C5BE7C2B2497A800CBC2ED /* FeaturedCVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeaturedCVCell.xib; sourceTree = "<group>"; };
-		A9D15B862B5CA3600086069E /* NAV_BAR.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NAV_BAR.swift; sourceTree = "<group>"; };
-		A9D15B882B5CAC190086069E /* NavBarTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavBarTitle.swift; sourceTree = "<group>"; };
+		A9D15B862B5CA3600086069E /* NavBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavBar.swift; sourceTree = "<group>"; };
 		A9D15B8A2B5CC1FE0086069E /* NavBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavBar.swift; sourceTree = "<group>"; };
 		A9D15B8C2B5CC3320086069E /* Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
 		A9D568B12B6E580B0084D4EA /* PontanoSans-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PontanoSans-VariableFont_wght.ttf"; sourceTree = "<group>"; };
@@ -261,7 +260,7 @@
 		A9EC4D8B2B4762C70059E50C /* ChangePasswordVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChangePasswordVC.xib; sourceTree = "<group>"; };
 		A9FA565D2B5DFDDE00A926AA /* kNavBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kNavBar.swift; sourceTree = "<group>"; };
 		A9FA565F2B5DFDE600A926AA /* kNavBar.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = kNavBar.xib; sourceTree = "<group>"; };
-		CC061DFE13F6026FE2E8FAA7 /* Pods-SukkarApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SukkarApp.debug.xcconfig"; path = "Target Support Files/Pods-SukkarApp/Pods-SukkarApp.debug.xcconfig"; sourceTree = "<group>"; };
+		D8769104800DF4FC9D182E0E /* Pods_SukkarApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SukkarApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -269,28 +268,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8DB499A637F9E9B459755114 /* Pods_SukkarApp.framework in Frameworks */,
+				8933EF8EE48147AEF76B013F /* Pods_SukkarApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5A42C0527D1ED6FE90D124DB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D8769104800DF4FC9D182E0E /* Pods_SukkarApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		630D5815F4CC29E84DD7C830 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				CC061DFE13F6026FE2E8FAA7 /* Pods-SukkarApp.debug.xcconfig */,
-				76C6FA5F724C0F2C5061BEC0 /* Pods-SukkarApp.release.xcconfig */,
+				9745D9A43F859E59F803126D /* Pods-SukkarApp.debug.xcconfig */,
+				095054BF9E98544F5EEC0A5F /* Pods-SukkarApp.release.xcconfig */,
 			);
 			path = Pods;
-			sourceTree = "<group>";
-		};
-		899088E6724CBC66A95D2E5E /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				025F13D61BA6FF6632A7B9CE /* Pods_SukkarApp.framework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		A939A0342B3F6C1D00FCF287 /* OrdersDetailsVC */ = {
@@ -521,11 +520,11 @@
 		A974B85C2B1EC10D008D4A97 /* Enums */ = {
 			isa = PBXGroup;
 			children = (
+				A91BE5DF2B7869B300314B52 /* NavBarImg.swift */,
+				A9D15B862B5CA3600086069E /* NavBar.swift */,
 				A974B85A2B1EC0FD008D4A97 /* Colors.swift */,
 				A9D568B92B6E65030084D4EA /* ValidMassage.swift */,
 				A97222E52B66A8D400BAFFF8 /* AlertTitle.swift */,
-				A9D15B882B5CAC190086069E /* NavBarTitle.swift */,
-				A9D15B862B5CA3600086069E /* NAV_BAR.swift */,
 				A9E018232B5AD21D00989F8C /* BACK.swift */,
 				A930D1D12B53163D00A39E6C /* SystemColors.swift */,
 				A93AA08B2B521E1B00FA227F /* Size.swift */,
@@ -672,16 +671,16 @@
 				A9BCC91F2B1DE80E00A83F87 /* SukkarApp */,
 				A9795AFE2B6CA567008E96CF /*  Info.plist */,
 				630D5815F4CC29E84DD7C830 /* Pods */,
-				899088E6724CBC66A95D2E5E /* Frameworks */,
+				5A42C0527D1ED6FE90D124DB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		A9BCC91F2B1DE80E00A83F87 /* SukkarApp */ = {
 			isa = PBXGroup;
 			children = (
+				A974B85E2B1EC6FB008D4A97 /* Extensions */,
 				A974B85D2B1EC133008D4A97 /* Utilites */,
 				A9BCC9402B1DEAB800A83F87 /* View */,
-				A974B85E2B1EC6FB008D4A97 /* Extensions */,
 				A93AA0892B521CAF00FA227F /* DesingSystem */,
 				A93AA08A2B521CDD00FA227F /* Application */,
 			);
@@ -849,11 +848,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A9BCC9312B1DE80F00A83F87 /* Build configuration list for PBXNativeTarget "SukkarApp" */;
 			buildPhases = (
-				C947B35638D39CF3FF64C5F5 /* [CP] Check Pods Manifest.lock */,
+				3396A7BBB8ECDC2C96549E5D /* [CP] Check Pods Manifest.lock */,
+				A9A4F2042B77EA84009A2668 /* ShellScript */,
 				A9BCC9192B1DE80E00A83F87 /* Sources */,
 				A9BCC91A2B1DE80E00A83F87 /* Frameworks */,
 				A9BCC91B2B1DE80E00A83F87 /* Resources */,
-				76B2C9DE1FBE3B38FD2887D6 /* [CP] Embed Pods Frameworks */,
+				5A64CE4F6860C2ED6BE99C02 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -876,6 +876,7 @@
 				TargetAttributes = {
 					A9BCC91C2B1DE80E00A83F87 = {
 						CreatedOnToolsVersion = 15.0.1;
+						LastSwiftMigration = "";
 					};
 				};
 			};
@@ -953,24 +954,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		76B2C9DE1FBE3B38FD2887D6 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SukkarApp/Pods-SukkarApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SukkarApp/Pods-SukkarApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SukkarApp/Pods-SukkarApp-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		C947B35638D39CF3FF64C5F5 /* [CP] Check Pods Manifest.lock */ = {
+		3396A7BBB8ECDC2C96549E5D /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -992,6 +976,41 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		5A64CE4F6860C2ED6BE99C02 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SukkarApp/Pods-SukkarApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SukkarApp/Pods-SukkarApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SukkarApp/Pods-SukkarApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A9A4F2042B77EA84009A2668 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [[ \"$(uname -m)\" == arm64 ]]; then\n    export PATH=\"/opt/homebrew/bin:$PATH\"\nfi\n\nif which swiftlint > /dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -1000,6 +1019,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A93AA08E2B521E2900FA227F /* Fonts.swift in Sources */,
+				A91BE5E02B7869B300314B52 /* NavBarImg.swift in Sources */,
 				A96ADFE02B4CB2BE00015DC5 /* ChartTVCell.swift in Sources */,
 				A987EDFA2B4798390060D38D /* OffersCVCell.swift in Sources */,
 				A90FAB042B48449900C09F6B /* KHTxtField.swift in Sources */,
@@ -1038,12 +1058,11 @@
 				A9A713772B261CBB009FD6C2 /* LoginError.swift in Sources */,
 				A974B85B2B1EC0FD008D4A97 /* Colors.swift in Sources */,
 				A966C2C22B33CDED00D8F0E1 /* AccountCVCell.swift in Sources */,
-				A9D15B872B5CA3600086069E /* NAV_BAR.swift in Sources */,
+				A9D15B872B5CA3600086069E /* NavBar.swift in Sources */,
 				A939A03C2B3F797A00FCF287 /* OrderDetailsCVCell.swift in Sources */,
 				A93AA0962B52261100FA227F /* UILabel+Extension.swift in Sources */,
 				A93AA0922B521E4500FA227F /* lbls.swift in Sources */,
 				A93AA0902B521E3B00FA227F /* Direction.swift in Sources */,
-				A9D15B8B2B5CC1FE0086069E /* NavBar.swift in Sources */,
 				A942D04C2B3481BE004D0F89 /* UITableView+Extension.swift in Sources */,
 				A96ADFD02B4C8E9A00015DC5 /* ContactCVCell.swift in Sources */,
 				A93AA0942B521ED600FA227F /* String+Extensions.swift in Sources */,
@@ -1059,7 +1078,6 @@
 				A9BCC9212B1DE80E00A83F87 /* AppDelegate.swift in Sources */,
 				A9E018222B5AAA8100989F8C /* KHNavBar.swift in Sources */,
 				A987EDFF2B47A14F0060D38D /* AddAddressesVC.swift in Sources */,
-				A9D15B892B5CAC190086069E /* NavBarTitle.swift in Sources */,
 				A930D1CE2B5305F200A39E6C /* TxtFields.swift in Sources */,
 				A9C5BE752B24976D00CBC2ED /* SliderCVCell.swift in Sources */,
 				A974B8602B1EC722008D4A97 /* UIView+Extension.swift in Sources */,
@@ -1217,7 +1235,7 @@
 		};
 		A9BCC9322B1DE80F00A83F87 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CC061DFE13F6026FE2E8FAA7 /* Pods-SukkarApp.debug.xcconfig */;
+			baseConfigurationReference = 9745D9A43F859E59F803126D /* Pods-SukkarApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -1245,7 +1263,7 @@
 		};
 		A9BCC9332B1DE80F00A83F87 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 76C6FA5F724C0F2C5061BEC0 /* Pods-SukkarApp.release.xcconfig */;
+			baseConfigurationReference = 095054BF9E98544F5EEC0A5F /* Pods-SukkarApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

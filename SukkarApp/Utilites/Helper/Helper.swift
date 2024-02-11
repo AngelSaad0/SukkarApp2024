@@ -17,7 +17,7 @@ func isEnglish() -> Bool{
  if MOLHLanguage.isRTLLanguage() { return false } else{ return true }
 }
  //MARK: - //Swift Messages
-public func displayMessage(message: ValidMassage, isError: Bool) {
+@MainActor public func displayMessage(message: ValidMassage, isError: Bool) {
     
     let view = MessageView.viewFromNib(layout: .cardView)
     if isError == true {

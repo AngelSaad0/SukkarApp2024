@@ -6,7 +6,7 @@
 //
 
 import Foundation
-enum BACK: String, CaseIterable{
+enum BACK: String, CaseIterable {
     case dismiss = "dismiss"
     case goToTabbar = "goToTabbar"
     case freeAction = "freeAction"

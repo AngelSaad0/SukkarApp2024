@@ -11,117 +11,95 @@ import SwiftyJSON
 import CLTypingLabel
 import IQKeyboardManagerSwift
 class LoginVC: UIViewController {
-    
+    // varable and constant
     @IBOutlet weak var emailTxtField: UITextField!
     @IBOutlet weak var passwordTxtField: UITextField!
-    @IBOutlet var cornerRaduisView:[UIView]!
+    @IBOutlet var cornerRaduisView: [UIView]!
     @IBOutlet weak var loginBtn: UIButton!
     @IBOutlet weak var registerBtn: UIButton!
     @IBOutlet weak var guestBtn: UIButton!
-    @IBOutlet weak var forgetPassword:UIButton!
+    @IBOutlet weak var forgetPassword: UIButton!
     @IBOutlet weak var continueAsLbl: UILabel!
-    
+    // view load
     override func viewDidLoad() {
         super.viewDidLoad()
         initUI()
-        IQKeyboardManager.shared.enable = false
     }
-    
-    //continue As Guest button
+    // continue As Guest button
     @IBAction func continueAsGuest(_ sender: Any) {
         UserDefault.shared.continueAsAGuest = true
         UserDefault.shared.storeData()
         navigationController?.pushViewController(MainTB(), animated: true)
     }
-    
-    //login button
+    // login button
     @IBAction func loginBtnClicked(_ sender: UIButton) {
-        if validateLoginFields(){
+        if validateLoginFields() {
             getLoginData()
-            displayMessage(message:.Succeses, isError: false)
-                UserDefault.shared.isLogin = true
-                UserDefault.shared.storeData()
-            
+            displayMessage(message: .Succeses, isError: false)
+            UserDefault.shared.isLogin = true
+            UserDefault.shared.storeData()
         }
     }
-    
     // register button
-    @IBAction func registerBtnClicked(_ sender: UIButton){
-        let vc:UIViewController  = RegisterVC()
-        navigationController?.pushViewController(vc, animated: true)
+    @IBAction func registerBtnClicked(_ sender: UIButton) {
+        navigationController?.pushViewController(RegisterVC(), animated: true)
     }
-    
 }
 
-
-//MARK: - Helper Extension
-extension LoginVC{
-    
-    //init ui
-    func initUI(){
-        //arange in calling fun required for initLocalizable & customDesindForAR
+// MARK: - Helper Extension
+extension LoginVC {
+    // init user interface
+    func initUI() {
+        // arange in calling fun required for initLocalizable & customDesindForAR
         initLocalizable()
         customDesindForAR()
         initDesing()
-        initNavBar()
+        // initNavBar()
     }
-    
-    //init Desing
-    func initDesing(){
+    // init Desing
+    func initDesing() {
         loginBtn.addBackgroundAndRaduisBtn(backgroundColor: .C0079FB, raduis: 7)
         registerBtn.addBorderAndRaduisBtn(borderColor: .C0079FB, borderWith: 1, raduis: 7)
-        for view in cornerRaduisView{
+        for view in cornerRaduisView {
             view.addRadiusView(radius: 7)
         }
     }
-    
-    //init NavBar
-    func initNavBar() {
-        addNavigation(items: [.VIDEO, .BACK])
-    }
-    
-    //Localizable
-    func initLocalizable(){
+    // init NavBar
+    // Localizable
+    func initLocalizable() {
         loginBtn.customBtn(title: .LOGIN )
         registerBtn.customBtn(title: .REGISTER)
         guestBtn.customBtn(titleColor: .C0079FB, title: .GUEST)
-        forgetPassword.customBtn(titleColor:.C707070, title: .FORGET_PASSWORD)
-        continueAsLbl.customLbl(txtColor: .C707070 ,text:.CONTINUE_AS)
+        forgetPassword.customBtn(titleColor: .C707070, title: .FORGET_PASSWORD)
+        continueAsLbl.customLbl(txtColor: .C707070, text: .CONTINUE_AS)
         emailTxtField.customTxtField(placeholder: .EMAIL)
         passwordTxtField.customTxtField(placeholder: .PASSWORD)
-        
     }
-    
-    //custom Desind For ARABIC
-    func customDesindForAR(){
+    // custom Desind For ARABIC
+    func customDesindForAR() {
         guestBtn.btnTxtColorInArbaic(txtColorAR: .C212121)
     }
-    
-    //getLoginData
-    func getLoginData(){
-       
+    // get Login Data
+    func getLoginData() {
     }
-   //validate Login Fields
-    func validateLoginFields()-> Bool{
+   // validate Login Fields
+    func validateLoginFields() -> Bool {
         if emailTxtField.text?.trimmingCharacters(in: .whitespaces) == "" {
-            displayMessage(message:.EmailEmpty, isError: true)
+            displayMessage(message: .EmailEmpty, isError: true)
                 return false
             }
-            if !isValidMobileOrEmail(emailTxtField.text?.trimmingCharacters(in: .whitespaces) ?? ""){
-                displayMessage(message:.EmailValid, isError: true)
+            if !isValidMobileOrEmail(emailTxtField.text?.trimmingCharacters(in: .whitespaces) ?? "") {
+                displayMessage(message: .EmailValid, isError: true)
                 return false
             }
             if passwordTxtField.text?.trimmingCharacters(in: .whitespaces) == "" {
-                displayMessage(message:.PasswordEmpty, isError: true)
+                displayMessage(message: .PasswordEmpty, isError: true)
                 return false
             }
-            if !isValidPassword(passwordTxtField.text?.trimmingCharacters(in: .whitespaces) ?? ""){
-                displayMessage(message:.PasswordVaild, isError: true)
+            if !isValidPassword(passwordTxtField.text?.trimmingCharacters(in: .whitespaces) ?? "") {
+                displayMessage(message: .PasswordVaild, isError: true)
                 return false
             }
             return true
         }
-    
-
 }
-    

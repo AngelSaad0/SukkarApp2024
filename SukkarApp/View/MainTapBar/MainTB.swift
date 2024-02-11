@@ -29,10 +29,10 @@ class MainTB: UITabBarController {
 //MARK: - SETUP TABS & CREATE NavigationController
 extension MainTB{
     private func setupTabItems(){
-        let home          = self.createNavTabBar(vc:HomeVC(),image:"home_unsel",title:"Home")
-        let catagories    = self.createNavTabBar(vc:CatagoriesVC(),image:"category_unsel", title:"catagories")
-        let offers        = self.createNavTabBar(vc:OffersVC(),image:"offers_unsel",title:"offers")
-        let account       = self.createNavTabBar(vc:AccountVC(),image:"account_unsel",title:"account")
+        let home = self.createTabBarItem(HomeVC(),img:"home_unsel",title:"Home")
+        let catagories = self.createTabBarItem(CatagoriesVC(),img:"category_unsel", title:"catagories")
+        let offers  = self.createTabBarItem(OffersVC(),img:"offers_unsel",title:"offers")
+        let account = self.createTabBarItem(AccountVC(),img:"account_unsel",title:"account")
         let vcs = [home,catagories,offers,account]
         self.setViewControllers(vcs, animated: true)
         

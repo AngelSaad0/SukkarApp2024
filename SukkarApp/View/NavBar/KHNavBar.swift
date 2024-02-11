@@ -55,16 +55,16 @@ class KHNavBar: UIView {
 //            popup.buttomShadow(view: popup.containerView)
 //        }
         popup.setupIsTitle(isVarTitle: isVarTitle, varTitle: varTitle, title: title)
-        switch shape {
-        case .home: popup.initHomeCase()
-        case .tabBar: popup.initTabBarCase()
-        case .withNoti: popup.initWithNotiCase()
-        case .plus: popup.initPlusCase()
-        case .withoutNoti: popup.initWithoutNotiCase()
-        case .chat: popup.initChatCase()
-        case .oldChat: popup.initOldChatCase()
-        case .doctorChat: popup.initDoctorChatCase()
-        }
+//        switch shape {
+//        case .home: popup.initHomeCase()
+//        case .tabBar: popup.initTabBarCase()
+//        case .withNoti: popup.initWithNotiCase()
+//        case .plus: popup.initPlusCase()
+//        case .withoutNoti: popup.initWithoutNotiCase()
+//        case .chat: popup.initChatCase()
+//        case .oldChat: popup.initOldChatCase()
+//        case .doctorChat: popup.initDoctorChatCase()
+//        }
         view.addSubview(popup)
         return popup
     }

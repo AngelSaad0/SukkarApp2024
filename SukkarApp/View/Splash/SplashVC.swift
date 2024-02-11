@@ -37,7 +37,7 @@ extension SplashVC{
         Timer.scheduledTimer(timeInterval: 0.8, target: self, selector: #selector(splashTimeOut(sendr:)), userInfo: nil, repeats: false)
     }
     @objc func splashTimeOut(sendr: Timer){
-        AppDelegate.sharedInstance().window?.rootViewController = UINavigationController(rootViewController: LoginVC())
+       // AppDelegate.sharedInstance().window?.rootViewController = UINavigationController(rootViewController: LoginVC())
     }
     
 }
