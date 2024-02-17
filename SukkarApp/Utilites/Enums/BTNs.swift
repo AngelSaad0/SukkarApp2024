@@ -8,17 +8,19 @@
 import Foundation
 
 // MARK: - BTNs Enum
-enum BTNs: String {
-    case NONE = ""
-    case LOGIN = "loginBtn"
-    case NEW_USER = "newUserBtn"
-    case SAVE = "SaveBtn"
-    case SEND = "SendBtn"
-    case REGISTER = "RegisterBtn"
-    case FORGET_PASSWORD = "forgetPasswordBtn"
-    case GUEST = "guestBtn"
-    case TERMS_CONDTIONS = "termsCondtionsBtn"
+enum BTN: String {
     
+    case non = ""
+    case login = "loginBtn"
+    case logout = "Logout"
+    case newUser = "newUserBtn"
+    case save = "SaveBtn"
+    case send = "SendBtn"
+    case register = "RegisterBtn"
+    case forgetPassword = "forgetPasswordBtn"
+    case guest = "guestBtn"
+    case termsCondtions = "termsCondtionsBtn"
+
     var title: String {
          self.rawValue.localized
     }

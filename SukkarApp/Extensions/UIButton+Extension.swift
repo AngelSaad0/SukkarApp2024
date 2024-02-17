@@ -17,23 +17,23 @@ extension UIButton{
              button.layer.cornerRadius = button.frame.height/2
         }
 //MARK: - add border to button
-    func addBorderBtn(color:Colors,width:CGFloat){
+    func addBorderBtn(color:Color,width:CGFloat){
         self.layer.borderColor = UIColor(named:color.rawValue)?.cgColor
         self.layer.borderWidth = width
     }
 //MARK: - add background & raduis
-    func addBackgroundAndRaduisBtn(backgroundColor:Colors,raduis:Int){
+    func addBackgroundAndRaduisBtn(backgroundColor:Color,raduis:Int){
         self.backgroundColor = UIColor(named: backgroundColor.rawValue)
         self.layer.cornerRadius = CGFloat(raduis)
     }
 //MARK: - add Border And Raduis Btn
-    func addBorderAndRaduisBtn(borderColor:Colors, borderWith:Int, raduis:Int){
+    func addBorderAndRaduisBtn(borderColor:Color, borderWith:Int, raduis:Int){
         self.layer.borderColor = UIColor(named:borderColor.rawValue)?.cgColor
         self.layer.borderWidth = CGFloat(borderWith)
         self.layer.cornerRadius = CGFloat(raduis)
     }
 //MARK: - add Under line Title TO Button
-    func addUnderlineTitle(titleColor: Colors = .CE2E2E2, font: Fonts = .Regular, size: Size = .size_16, title: BTNs){
+    func addUnderlineTitle(titleColor: Color = .CE2E2E2, font: Fonts = .regular, size: Size = .size_16, title: BTN){
         self.tintColor = titleColor.hex
         let size = iPhoneXFactor*(CGFloat(size.rawValue))
         let yourAttributes: [NSAttributedString.Key: Any] = [
@@ -47,7 +47,7 @@ extension UIButton{
              self.setAttributedTitle(attributeString, for: .normal)
     }
 //MARK: - custom Button
-    func customBtn(titleColor: Colors = .CFFFFFF, font: Fonts = .Regular , size: Size = .size_14 , title: BTNs){
+    func customBtn(titleColor: Color = .CFFFFFF, font: Fonts = .regular , size: Size = .size_14 , title: BTN) {
         self.tintColor = UIColor(named: titleColor.rawValue)
         let size = iPhoneXFactor*(CGFloat(size.rawValue))
         self.titleLabel?.font = UIFont(name: (font.rawValue.localized), size: size)
@@ -56,7 +56,7 @@ extension UIButton{
     
     
 //MARK: - change text color in case arabic
-    func btnTxtColorInArbaic(txtColorAR: Colors){
+    func btnTxtColorInArbaic(txtColorAR: Color){
         if !isEnglish() {
             self.tintColor = txtColorAR.hex
         }

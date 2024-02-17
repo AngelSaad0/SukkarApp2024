@@ -23,7 +23,7 @@ class CategoriesCVCell: UICollectionViewCell {
        }
        func initCell(cellData:CategoriesCatM){
            lbl.text = cellData.title
-           mainView.addBorderView(color:(cellData.isSelected) ? Colors.C0079FB : Colors.CE2E2E2, width: 1)
+           mainView.addBorderView(color:(cellData.isSelected) ? Color.C0079FB : Color.CE2E2E2, width: 1)
 //           if cellData.isSelected {
 //               self.mainView.layer.borderColor = UIColor(named: Colors.C0079FB.rawValue)?.cgColor
 //               lbl.textColor = UIColor(named:Colors.C0079FB.rawValue)

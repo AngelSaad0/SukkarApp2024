@@ -10,49 +10,52 @@ import UIKit
 class SideMenuVC: UIViewController {
 
     @IBOutlet weak var sideMenuTV: UITableView!
-    
-    var slideMenuList:[SlideMenuM] = []
+    var slideMenuList: [SlideMenuM] = []
+
     override func viewDidLoad() {
         super.viewDidLoad()
        initUI()
     }
-    
-
-   
 }
+// MARK: - helper
+extension SideMenuVC {
 
+    func initUI() {
 
-
-extension SideMenuVC{
-    func initUI(){
-        
-     initTV(tv: sideMenuTV)
+        initTablView(tableView: sideMenuTV)
         slideMenuList.append(SlideMenuM(img: "Favorites_icon", title: "Favorites"))
         slideMenuList.append(SlideMenuM(img: "About _us_icon", title: "About us"))
         slideMenuList.append(SlideMenuM(img: "Contact _US_icon", title: "Contact US"))
         slideMenuList.append(SlideMenuM(img: "arabic_icon", title: "عربي"))
     }
-    
-    
-    func initTV(tv:UITableView){
-        tv.delegate = self
-        tv.dataSource = self
-        tv.registerTVNib(cell: SideMenuTVCell.self)
+
+    func initTablView(tableView:UITableView){
+        tableView.delegate = self
+        tableView.dataSource = self
+        tableView.registerTVNib(cell: SideMenuTVCell.self)
     }
 }
+// UITableViewDelegate
+extension SideMenuVC: UITableViewDelegate {
 
-
-
-extension SideMenuVC:UITableViewDelegate{
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 66
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        goToViewController(index: indexPath.row)
+        switch indexPath.row {
+        case 0: navigationController?.pushViewController(FavoritesVC(), animated: true)
+        case 1: navigationController?.pushViewController(AboutUsVC(), animated: true)
+        case 2: navigationController?.pushViewController(ContactUsVC(), animated: true)
+        default: 
+            UserDefault.shared.language = "ar"
+            UserDefault.shared.storeData()
+            
+        }
     }
     
 }
-extension SideMenuVC:UITableViewDataSource{
+extension SideMenuVC: UITableViewDataSource {
+
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 4
     }
@@ -63,34 +66,4 @@ extension SideMenuVC:UITableViewDataSource{
         cell.initCell(cellData: slideMenuList[indexPath.row])
         return cell
     }
-    
-    
 }
-//MARK: - FUNC
-extension SideMenuVC{
-    func goToViewController(index:Int){
-       
-                switch index{
-                case 0 :
-                    let vc = FavoritesVC()
-                    vc.title = "Favorites"
-                    navigationController?.pushViewController(vc, animated: true)
-                case 1 :
-                    let vc = AboutUsVC()
-                    vc.title = "About us"
-                    navigationController?.pushViewController(vc, animated: true)
-                case 2 :
-                    let vc = ContactUsVC()
-                    vc.title = "Contact US"
-                    navigationController?.pushViewController(vc, animated: true)
-               default:
-                    let vc = FavoritesVC()
-                    vc.title = "Favorites"
-                    navigationController?.pushViewController(vc, animated: true)
-//
-                }
-        
-            }
-    }
-
-

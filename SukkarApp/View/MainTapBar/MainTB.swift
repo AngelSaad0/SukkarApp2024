@@ -8,61 +8,41 @@
 import UIKit
 
 class MainTB: UITabBarController {
+
+    let notificationNme = NSNotification.Name("goToIndex1")
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.delegate = self
-        
+        initUI()
+        NotificationCenter.default.addObserver(self, selector: #selector(MainTB.NotificationGoToIndex1), name: notificationNme, object: nil)
     }
-    override func viewWillAppear(_ animated: Bool) {
-        //mangeNavigation(isHidden: true)
-        setupTabItems()
-        setUpBarButtons()
-    }
-    @objc func sideMenuBtnClicked() {
-        toSideMenu()
-    }
-    @objc func chartBtnClicked(){
-        toChartVC()
-    }
-}
 
-//MARK: - SETUP TABS & CREATE NavigationController
-extension MainTB{
-    private func setupTabItems(){
-        let home = self.createTabBarItem(HomeVC(),img:"home_unsel",title:"Home")
-        let catagories = self.createTabBarItem(CatagoriesVC(),img:"category_unsel", title:"catagories")
-        let offers  = self.createTabBarItem(OffersVC(),img:"offers_unsel",title:"offers")
-        let account = self.createTabBarItem(AccountVC(),img:"account_unsel",title:"account")
-        let vcs = [home,catagories,offers,account]
-        self.setViewControllers(vcs, animated: true)
-        
+    override func viewDidAppear(_ animated: Bool) {
+        self.tabBarController?.selectedIndex = 2
     }
-    private func setUpBarButtons(){
-        let sideMenue = UIBarButtonItem(image:UIImage(named: "side_menu"), style: .plain, target: self, action: #selector(sideMenuBtnClicked))
-        sideMenue.tintColor = UIColor(named: Colors.C231F1F.rawValue)
-        let chart =  UIBarButtonItem(image:UIImage(named: "cart"), style: .plain, target: self, action: #selector(chartBtnClicked))
-        chart.tintColor = UIColor(named: Colors.C231F1F.rawValue)
-        navigationItem.rightBarButtonItems = [sideMenue,chart]
-        
+    @objc func NotificationGoToIndex1() {
+        print("NotificationGoToIndex1")
+        self.selectedIndex = 1
+    }
+    func initUI() {
+        self.navigationItem.setHidesBackButton(true, animated: false)
+        self.view.semanticContentAttribute = .forceLeftToRight
+
+        let home = createTabBarItem(HomeVC(), img: "home_unsel")
+        let catagories = createTabBarItem(CatagoriesVC(), img: "category_unsel")
+        let offers = createTabBarItem(OffersVC(), img: "offers_unsel")
+        let account = createTabBarItem(AccountVC(), img: "account_unsel")
+        let vcs = [home, catagories, offers, account]
+        self.setViewControllers(vcs, animated: false)
+        tabBar.items?[0].title = VcTitle.home.rawValue.localized
+
+    }
+    private func createTabBarItem(_ vc: UIViewController, img: String) -> UINavigationController {
+        let itemScene = UINavigationController(rootViewController: vc)
+        itemScene.tabBarItem.image = UIImage(named: img)
+        itemScene.tabBarItem.title = "مفيش حاجه بتحصل هنا"
+        vc.view.semanticContentAttribute = .forceLeftToRight
+        return itemScene
+
     }
 }
-//MARK: - UITabBarControllerDelegate
-extension MainTB :UITabBarControllerDelegate{
-    func tabBarController(_ tabBarController: UITabBarController, didSelect viewController: UIViewController){
-        
-       
-    }
-    
-}
-
-
-
-
-
-
-//        UINavigationBar.appearance().standardAppearance = UINavigationBarAppearance()
-//        UINavigationBar.appearance().compactAppearance = UINavigationBarAppearance()
-//        UINavigationBar.appearance().scrollEdgeAppearance = UINavigationBarAppearance()
-//        UITabBar.appearance().standardAppearance = UITabBarAppearance()
-//        UITabBar.appearance().scrollEdgeAppearance = UITabBarAppearance()
-        

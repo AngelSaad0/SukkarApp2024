@@ -8,7 +8,7 @@
 import Foundation
 struct Login: Codable {
     let customers : [Customers]?
-
+    
 }
 
 struct Customers : Codable {

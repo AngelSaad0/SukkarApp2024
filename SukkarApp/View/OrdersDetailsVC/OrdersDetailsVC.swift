@@ -9,23 +9,26 @@ import UIKit
 
 class OrdersDetailsVC: UIViewController {
    
-    @IBOutlet var borderViews:[UIView]!
+    @IBOutlet var borderViews: [UIView]!
     @IBOutlet weak var orderDetailsTVHeight: NSLayoutConstraint!
     @IBOutlet weak var orderDetailsCV: UICollectionView!
     @IBOutlet weak var orderDetailsTV: UITableView!
-    let cellTVHeight:CGFloat = 63.5
-    var orderList:[OrderDetails] = []
-    //var orderList:[OrderDetails] = []
+    let cellTVHeight: CGFloat = 63.5
+    var orderList: [OrderDetails] = []
+
     override func viewDidLoad() {
         super.viewDidLoad()
         initUI()
     }
 }
+// MARK: - HELPER
 
-extension OrdersDetailsVC{
-    func initUI(){
+extension OrdersDetailsVC {
+
+    func initUI() {
+        addNavBar(items: [.back, .notifaction, .menu] ,title: .orders)
         for view in borderViews {
-            view.addBorderView(color: Colors.CE2E2E2, width: 1)
+            view.addBorderView(color: Color.CE2E2E2, width: 1)
             view.addRadiusView(radius: 10)
         }
         orderDetailsCV.delegate = self
@@ -47,30 +50,29 @@ extension OrdersDetailsVC{
         
     }
 }
-//MARK: - // TableView//
-//MARK: -UITableViewDelegate
-extension OrdersDetailsVC:UITableViewDelegate{
-    
+// UITableViewDelegate
+extension OrdersDetailsVC: UITableViewDelegate {
+
 }
-//MARK: -UITableViewDataSource
-extension OrdersDetailsVC:UITableViewDataSource{
+
+// UITableViewDataSource
+extension OrdersDetailsVC: UITableViewDataSource {
+
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return orderList.count
     }
+
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+
         let cell = tableView.dequeueTVCell(index: indexPath) as OrderDetailsTVCell
         cell.initCell(cellData: orderList[indexPath.row])
         return cell
     }
 }
 
-//MARK: - // CollectionView //
-//MARK: -
-extension OrdersDetailsVC:UICollectionViewDelegate{
-    
-}
-//MARK: -
-extension OrdersDetailsVC:UICollectionViewDataSource{
+// UICollectionViewDataSource
+extension OrdersDetailsVC: UICollectionViewDataSource {
+
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 1
     }
@@ -79,10 +81,11 @@ extension OrdersDetailsVC:UICollectionViewDataSource{
         let cell = collectionView.dequeueCVCell(index: indexPath) as OrderDetailsCVCell
         return cell
     }
-    
 }
-//MARK: -
-extension OrdersDetailsVC:UICollectionViewDelegateFlowLayout{
+
+// UICollectionViewDelegateFlowLayout
+extension OrdersDetailsVC: UICollectionViewDelegateFlowLayout {
+
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let collectionViewWidth = collectionView.bounds.width
         let collectionViewHeight = collectionView.bounds.height

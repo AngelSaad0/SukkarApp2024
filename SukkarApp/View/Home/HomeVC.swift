@@ -8,6 +8,7 @@
 import UIKit
 
 class HomeVC: UIViewController {
+
     let sliderList = ["img1","img1","img1","img1","img1","img1","img1","img1","img1"]
     var catagoriesList:[CategoriesHomM] = []
     var featuredList = ["img9","img9","img9","img9"]
@@ -19,62 +20,75 @@ class HomeVC: UIViewController {
     @IBOutlet weak var featuredCV: UICollectionView!
     
     override func viewDidLoad() {
+
         super.viewDidLoad()
         initUI()
-        
     }
-    override func viewWillAppear(_ animated: Bool) {
+    
+    override func viewWillDisappear(_ animated: Bool) {
         mangeNavigation(isHidden: true)
     }
+    override func viewWillAppear(_ animated: Bool) {
+        navigationController?.setNavigationBarHidden(false, animated: false)
+    }
+
 }
-//MARK: - initUI // func
+
+// MARK:  helper
+
 extension HomeVC {
     
-    func initUI(){
+    func initUI() {
+
+        addNavBar(items: [.notifaction, .logo])
         sliderPageControl.numberOfPages = sliderList.count
         startTimer()
-        initCV(cvs: [sliderCV,categoriesCV,featuredCV])
+        initCollectionView(cvs: [sliderCV,categoriesCV,featuredCV])
         catagoriesList.append(CategoriesHomM(title: "Diabetic Supplies"))
         catagoriesList.append(CategoriesHomM(title: "Other"))
     }
-    func initCV(cvs:[UICollectionView]){
-       for cv in cvs {
-            cv.delegate = self
-            cv.dataSource = self
+    func initCollectionView(cvs:[UICollectionView]) {
+       for collectionView in cvs {
+           collectionView.delegate = self
+           collectionView.dataSource = self
         }
         cvs[0].registerCVNib(cell: SliderCVCell.self)
         cvs[1].registerCVNib(cell: CategoriesHomeVCCell.self)
         cvs[2].registerCVNib(cell: FeaturedCVCell.self)
     }
-    func startTimer(){
+    func startTimer() {
         timer = Timer.scheduledTimer(timeInterval: 4, target: self, selector: #selector(timeAction), userInfo: nil, repeats: true)
     }
-    @objc func timeAction(){
+    @objc func timeAction() {
         let scrollPostion = (currentPage<sliderList.count-1) ? currentPage+1 : 0
         sliderCV.scrollToItem(at: IndexPath(item: scrollPostion, section: 0), at: .centeredHorizontally, animated: true)
     }
+    override func logoBtnClicked() {
+        let notificationNme = NSNotification.Name("NotificationGoToIndex1")
+        NotificationCenter.default.post(name: notificationNme, object: nil)
+    }
+
 }
 
-//MARK: - UICollectionViewDelegate
-extension HomeVC:UICollectionViewDelegate{
+// MARK: UICollectionViewDelegate
+extension HomeVC: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         if collectionView.tag == 1 {
             if catagoriesList[indexPath.row].title == "Diabetic Supplies" {
-                let vc:UIViewController = DiabeticSuppliesVC()
-              
-                
-                navigationController?.pushViewController(vc, animated: true)
+                navigationController?.pushViewController(DiabeticSuppliesVC(), animated: true)
             }
         }
+    
     }
 }
-//MARK: - UICollectionViewDataSource
-extension HomeVC:UICollectionViewDataSource{
+
+// MARK: UICollectionViewDataSource
+extension HomeVC:UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         switch collectionView.tag {
-        case 0 : return sliderList.count
-        case 1 : return catagoriesList.count
-        default : return featuredList.count
+        case 0: return sliderList.count
+        case 1: return catagoriesList.count
+        default: return featuredList.count
         }
     }
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -96,9 +110,10 @@ extension HomeVC:UICollectionViewDataSource{
     }
     
 }
-//MARK: - UICollectionViewDelegateFlowLayout
-extension HomeVC:UICollectionViewDelegateFlowLayout{
-    
+// MARK: UICollectionViewDelegateFlowLayout
+
+extension HomeVC: UICollectionViewDelegateFlowLayout {
+
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         switch collectionView.tag {
         case 0 :
@@ -118,8 +133,9 @@ extension HomeVC:UICollectionViewDelegateFlowLayout{
             return CGSize(width: collectionViewHeight*1.2488, height:collectionViewHeight)
         }
     }
+
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        if scrollView.tag == 0{
+        if scrollView.tag == 0 {
             currentPage = Int(scrollView.contentOffset.x/scrollView.frame.width)
             sliderPageControl.currentPage = currentPage
         }

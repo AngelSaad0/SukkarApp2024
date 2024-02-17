@@ -10,59 +10,60 @@ import UIKit
 class OffersVC: UIViewController {
     @IBOutlet weak var offersCV: UICollectionView!
     @IBOutlet weak var offersPageControl: UIPageControl!
-    //    @IBOutlet weak var offersPageControl: UIPageControl!
-//    @IBOutlet weak var offersCV: UICollectionView!
+
+
     let offersList = ["img5","img5","img5","img5","img5"]
     var currentPage = 0
     var timer:Timer?
     override func viewDidLoad() {
         super.viewDidLoad()
-          initUI()
-        // Do any additional setup after loading the view.
+        initUI()
+        addNavBar(items: [.menu, .notifaction, .back],title: .none)
+        initUI()
     }
-    override func viewWillAppear(_ animated: Bool) {
+
+    override func viewWillDisappear(_ animated: Bool) {
         mangeNavigation(isHidden: true)
+    }
+
+    override func viewWillAppear(_ animated: Bool) {
+        mangeNavigation(isHidden: false)
     }
 }
 
-//MARK: - INITUI() _____ OffersVC
+// MARK: -  helper
+
 extension OffersVC {
-    func initUI(){
-               
+
+    func initUI() {
         self.title = "Offers"
         startTimer()
         offersPageControl.numberOfPages = offersList.count
-        initCV(cv: offersCV)
-        
-    }
-    func initCV(cv:UICollectionView){
-        cv.dataSource = self
-        cv.delegate = self
-        cv.registerCVNib(cell: OffersCVCell.self)
-    }
-    
-}
+        initCollectionView(collectionView: offersCV)
 
-// MARK: - func() _____ OffersVC
-extension OffersVC{
-    func startTimer(){
+    }
+    func initCollectionView(collectionView:UICollectionView){
+        collectionView.dataSource = self
+        collectionView.delegate = self
+        collectionView.registerCVNib(cell: OffersCVCell.self)
+    }
+
+    func startTimer() {
         timer = Timer.scheduledTimer(timeInterval: 2, target: self, selector: #selector(timeAction), userInfo: nil, repeats: true)
     }
-    @objc func timeAction(){
-        
+
+    @objc func timeAction() {
         let scrollPostion = (currentPage<offersList.count-1) ? currentPage+1 : 0
-        offersCV.scrollToItem(at:IndexPath(item: scrollPostion, section: 0), at: .centeredHorizontally, animated: true)
-        
+        offersCV.scrollToItem(at: IndexPath(item: scrollPostion, section: 0), at: .centeredHorizontally, animated: true)
+
     }
+
 }
 
 
-// MARK: - UICollectionViewDelegate
-extension OffersVC:UICollectionViewDelegate{
-    
-}
 // MARK: - UICollectionViewDataSource
-extension OffersVC:UICollectionViewDataSource{
+extension OffersVC:UICollectionViewDataSource {
+
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return offersList.count
     }
@@ -73,20 +74,16 @@ extension OffersVC:UICollectionViewDataSource{
       
         return cell
     }
-    
-    
+
 }
-
-
 // MARK: - UICollectionViewDelegateFlowLayout
-extension OffersVC:UICollectionViewDelegateFlowLayout{
+extension OffersVC:UICollectionViewDelegateFlowLayout {
+
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let collectionViewWidth = collectionView.bounds.width
         let collectionViewHiegth = collectionView.bounds.height
         return CGSize(width: collectionViewWidth, height: collectionViewHiegth)
     }
-    
-    
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         currentPage = Int(scrollView.contentOffset.x/scrollView.frame.width)
         offersPageControl.currentPage = currentPage

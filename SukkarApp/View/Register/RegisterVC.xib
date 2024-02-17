@@ -15,9 +15,9 @@
                 <outlet property="emailTxtField" destination="N9I-Ck-3Py" id="jjH-UO-N5I"/>
                 <outlet property="iAgreeLbl" destination="AlW-JZ-27o" id="RQp-2R-5Zk"/>
                 <outlet property="isAgreeImg" destination="J6B-KA-ZZk" id="a0u-bC-qh3"/>
-                <outlet property="mobileTxtField" destination="XDG-jz-8Vp" id="GCh-wR-PoF"/>
                 <outlet property="nameTxtField" destination="uue-H5-mWf" id="MMl-Dt-rMQ"/>
                 <outlet property="passwordTxtField" destination="Ayq-eN-Jak" id="fyc-Fn-Yqr"/>
+                <outlet property="phoneTxtField" destination="XDG-jz-8Vp" id="GCh-wR-PoF"/>
                 <outlet property="reTypePasswordTxtField" destination="gEG-QQ-bzc" id="nXH-xL-ied"/>
                 <outlet property="registerBtn" destination="iuP-wv-27x" id="frD-G6-xIV"/>
                 <outlet property="termsBtn" destination="zpc-fe-ENF" id="XIi-7o-p5V"/>

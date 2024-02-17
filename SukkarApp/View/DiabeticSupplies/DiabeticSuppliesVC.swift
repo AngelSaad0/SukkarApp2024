@@ -21,12 +21,11 @@ class DiabeticSuppliesVC: UIViewController {
 
 }
 //MARK: - DiabeticSuppliesVC FUNC
+
 extension DiabeticSuppliesVC {
-    func initUI(){
-        title = "Diabetic Supplies"
-        navBarAppearance(tintColor: Colors.C000000, titleColor: Colors.C231F1F)
-        hideBackBtnName()
-       
+    func initUI() {
+
+        addNavBar(items: [.notifaction, .back, .menu] , title: .diabetic)
         diabeticSuppliesCV.delegate = self
         diabeticSuppliesCV.dataSource = self
         diabeticSuppliesCV.registerCVNib(cell: DiabeticSuppliesCell.self)

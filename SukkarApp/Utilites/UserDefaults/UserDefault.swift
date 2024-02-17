@@ -7,7 +7,7 @@
 
 class UserDefault {
     static let shared = UserDefault()
-    
+
     // MARK: - Variables & Constants
     var continueAsAGuest: Bool = false
     // User Data
@@ -24,11 +24,10 @@ class UserDefault {
     var language: String = ""
     var token: String = ""
     var isLogin: Bool = false
-    var fullName: String = ""
-    
-    
+
+
     init() { getStoredData() }
-    
+
     func storeData() {
         SharedPref.shared.setSharedValue("continueAsAGuest", value: self.continueAsAGuest)
         // User Data
@@ -45,8 +44,8 @@ class UserDefault {
         SharedPref.shared.setSharedValue("language", value: self.language)
         SharedPref.shared.setSharedValue("token", value: self.token)
         SharedPref.shared.setSharedValue("isLogin", value: self.isLogin)
-        SharedPref.shared.setSharedValue("fullName", value: self.fullName)
     }
+
     func getStoredData() {
         self.continueAsAGuest = SharedPref.shared.getSharedValue(forKey: "continueAsAGuest") as? Bool ?? false
         // User Data
@@ -63,9 +62,9 @@ class UserDefault {
         self.language = SharedPref.shared.getSharedValue(forKey: "language") as? String ?? ""
         self.token = SharedPref.shared.getSharedValue(forKey: "token") as? String ?? ""
         self.isLogin = SharedPref.shared.getSharedValue(forKey: "isLogin") as? Bool ?? false
-        self.fullName = SharedPref.shared.getSharedValue(forKey: "fullName") as? String ?? ""
+
     }
-    
+
     func logout() {
         SharedPref.shared.removeValue(forKey: "continueAsAGuest")
         // User Data
@@ -82,8 +81,8 @@ class UserDefault {
         SharedPref.shared.removeValue(forKey: "language")
         SharedPref.shared.removeValue(forKey: "token")
         SharedPref.shared.removeValue(forKey: "isLogin")
-        SharedPref.shared.removeValue(forKey: "fullName")
+
         getStoredData()
     }
-    
+
 }

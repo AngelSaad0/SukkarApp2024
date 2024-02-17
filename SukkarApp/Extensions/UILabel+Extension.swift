@@ -8,19 +8,18 @@
 import UIKit
 
 extension UILabel {
-    
-    func customLbl(txtColor: Colors = .C707070, size: Size = .size_14, font: Fonts = .Regular, text:Lbls, direction: Direction = .Normal, nOlines: Int = 1) {
-        
+//    func customTxtField(txtColor: Color = .C9E9E9E ,placeholderColor: Color = .C9E9E9E , size: Size = .size_14, font: Fonts = .regular, placeholder: TxtField, text: String? = "", isPassword: Bool = false, isCenter: Bool = false) {
+    func customLbl(txtColor: Color = .C707070, size: Size = .size_14, font: Fonts = .regular, text:Lbls, direction: Direction = .normal, nOlines: Int = 1) {
+
         let size = iPhoneXFactor*(CGFloat(size.rawValue))
         self.font = UIFont(name: font.font, size: size)
-        
-        
+
         switch direction {
-        case .Left: self.textAlignment = ((isEnglish()) ? .left : .left)
-        case .Right: self.textAlignment = ((isEnglish()) ? .right : .right)
-        case .Normal: self.textAlignment = ((isEnglish()) ? .left : .right)
-        case .Center: self.textAlignment = .center
-            
+        case .left: self.textAlignment = ((isEnglish()) ? .left : .left)
+        case .right: self.textAlignment = ((isEnglish()) ? .right : .right)
+        case .normal: self.textAlignment = ((isEnglish()) ? .left : .right)
+        case .center: self.textAlignment = .center
+
         }
         self.textColor = UIColor(named: txtColor.rawValue)
         //self.textColor = UIColor(hexString: txtColor.rawValue)
@@ -30,7 +29,7 @@ extension UILabel {
     
     
 //MARK: - change text color in case arabic
-    func LblTxtColorInArbaic(txtColorAR: Colors, txtColorEn: Colors){
+    func LblTxtColorInArbaic(txtColorAR: Color, txtColorEn: Color){
      self.textColor = UIColor(named: (isEnglish()) ?  (txtColorEn.rawValue):(txtColorAR.rawValue))
         
     }

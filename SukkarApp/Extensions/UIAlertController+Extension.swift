@@ -11,7 +11,7 @@ extension UIAlertController {
   
 //MARK: -  //Set background color of UIAlertController
 
-    func setAlertBackgroundColor(color: Colors,alpha:CGFloat = 1,cornerRadius:CGFloat = 0) {
+    func setAlertBackgroundColor(color: Color,alpha:CGFloat = 1,cornerRadius:CGFloat = 0) {
     if let backgroundView = self.view.subviews.first, let groupView = backgroundView.subviews.first, let contentView = groupView.subviews.first {
         contentView.backgroundColor = UIColor(named: color.rawValue)
         contentView.alpha = alpha
@@ -19,7 +19,7 @@ extension UIAlertController {
         }
     }
 //MARK: - //Set title font and title color
-    func setAlertTitle(font: Fonts, color: Colors, size: Size) {
+    func setAlertTitle(font: Fonts, color: Color, size: Size) {
         guard let title = self.title else { return }
         let size = iPhoneXFactor*(CGFloat(size.rawValue))
         let font = UIFont(name: color.rawValue, size: size)
@@ -35,7 +35,7 @@ extension UIAlertController {
     }
     
 //MARK: - //Set message font and message color
-    func setAlertMessage(font: Fonts, color: Colors , size: Size) {
+    func setAlertMessage(font: Fonts, color: Color , size: Size) {
         guard let message = self.message else { return }
         let size = iPhoneXFactor*(CGFloat(size.rawValue))
         let font = UIFont(name: color.rawValue, size: size)
@@ -55,7 +55,7 @@ extension UIAlertController {
     }
 
 //MARK: - //Set tint color of UIAlertController
-    func setAlertTint(color: Colors) {
+    func setAlertTint(color: Color) {
         self.view.tintColor = UIColor(named: color.rawValue)
     }
 }

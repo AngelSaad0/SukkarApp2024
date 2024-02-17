@@ -45,7 +45,7 @@ class KHNavBar: UIView {
     
     
 //MARK: - Functions
-    public static func initView(vc controller: UIViewController, andView view: UIView, title: NavBarTitle, withShape shape: NavBar, isVarTitle: Bool, varTitle: String = "", withShadow: Bool, back: BACK) -> KHNavBar {
+    public static func initView(vc controller: UIViewController, andView view: UIView, title: VcTitle, withShape shape: NavBar, isVarTitle: Bool, varTitle: String = "", withShadow: Bool, back: BACK) -> KHNavBar {
         let popup = Bundle.main.loadNibNamed("KHNavBar", owner: controller, options: nil)?.last as! KHNavBar
         popup.parentVC = controller
         //popup.backAction = back
@@ -162,7 +162,7 @@ extension KHNavBar {
         notificationView.isHidden = true
         menuView.isHidden = true
     }
-    func setupIsTitle(isVarTitle: Bool, varTitle: String, title: NavBarTitle) {
+    func setupIsTitle(isVarTitle: Bool, varTitle: String, title: VcTitle) {
        // titleLbl.adjustDynamicSize(text: isVarTitle ? varTitle : title.rawValue.localized, font: , size: ._42, direction: .Center)
     }
 }

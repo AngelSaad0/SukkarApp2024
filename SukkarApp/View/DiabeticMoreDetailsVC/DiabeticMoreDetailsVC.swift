@@ -11,21 +11,17 @@ class DiabeticMoreDetailsVC: UIViewController {
     
     @IBOutlet weak var oneCornerRadius: UIView!
     @IBOutlet weak var twoSideCornerRadius: UIView!
-    //    @IBOutlet weak var twoSideCornerRadius: UIView!
-//    @IBOutlet weak var oneCornerRadius: UIView!
+
     override func viewDidLoad() {
         super.viewDidLoad()
         initUI()
-        // Do any additional setup after loading the view.
+
     }
-    
-
-   
-
 }
-extension DiabeticMoreDetailsVC{
-    func initUI(){
-        mangeNavigation(isHidden: false)
+//MARK: - HELPER
+extension DiabeticMoreDetailsVC {
+    func initUI() {
+        addNavBar(items: [.back,.menu,.notifaction,.share],title: .none)
         oneCornerRadius.addCornerRadius(25, corners: [.topLeft])
         twoSideCornerRadius.addCornerRadius(25, corners: [.topRight,.topLeft])
         

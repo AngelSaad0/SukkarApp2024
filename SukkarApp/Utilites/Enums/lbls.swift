@@ -7,11 +7,12 @@
 
 import Foundation
 enum Lbls: String{
-    case NONE = ""
-    case WELCOME = "welcomeLbl"
-    case CONTINUE_AS = "continueAsLbl"
-    case AGREE_FOR = "agreeForLbl"
-    
+    case none = ""
+    case welcome = "welcomeLbl"
+    case continueAs = "continueAsLbl"
+    case agreeFor = "agreeForLbl"
+    case editProfileLbl = "editProfileLbl"
+
     
     var title: String {
         return self.rawValue.localized

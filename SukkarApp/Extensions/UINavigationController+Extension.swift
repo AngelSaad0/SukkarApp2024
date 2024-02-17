@@ -6,6 +6,12 @@
 //
 
 import UIKit
-extension UINavigationController{
-   
+extension UINavigationController {
+    func NavBarAppearance() {
+        UINavigationBar.appearance().isTranslucent = false
+        navigationController?.navigationBar.scrollEdgeAppearance =  nil
+        navigationController?.navigationBar.compactAppearance =  nil
+
+    }
+
 }

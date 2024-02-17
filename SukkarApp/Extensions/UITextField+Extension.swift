@@ -9,8 +9,9 @@ import UIKit
 import MOLH
 
 extension UITextField {
-//MARK: - customTxtFmield
-    func customTxtField(txtColor: Colors = .C9E9E9E ,placeholderColor: Colors = .C9E9E9E , size: Size = .size_14, font: Fonts = .Regular, placeholder: TxtFields, text: String? = "", isPassword: Bool = false, isCenter: Bool = false) {
+
+// customTxtFmield
+    func customTxtField(txtColor: Color = .C9E9E9E ,placeholderColor: Color = .C9E9E9E , size: Size = .size_14, font: Fonts = .regular, placeholder: TxtField, text: String? = "", isPassword: Bool = false, isCenter: Bool = false) {
         let size = iPhoneXFactor*(CGFloat(size.rawValue))
         self.tintColor = UIColor(named: txtColor.rawValue)
         self.textColor = UIColor(named: txtColor.rawValue)
@@ -34,7 +35,7 @@ extension UITextField {
         self.returnKeyType = .default
     }
 //MARK: - change text color in case arabic
-        func txtFieldTxtColorInArbaic(txtColorAR: Colors, txtColorEn: Colors){
+        func txtFieldTxtColorInArbaic(txtColorAR: Color, txtColorEn: Color){
          self.textColor = UIColor(named: (isEnglish()) ?  (txtColorEn.rawValue):(txtColorAR.rawValue))
             
         }

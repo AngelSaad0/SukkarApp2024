@@ -24,25 +24,6 @@
                     <rect key="frame" x="0.0" y="59" width="393" height="759"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                    <navigationBar key="tableHeaderView" contentMode="scaleToFill" id="Hxh-mn-pc1">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="44"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                        <items>
-                            <navigationItem id="d6d-wd-OCc">
-                                <barButtonItem key="leftBarButtonItem" image="add_address_icon" id="baU-LV-GvJ">
-                                    <connections>
-                                        <action selector="addNewAddresse:" destination="-1" id="LWU-vM-Zel"/>
-                                    </connections>
-                                </barButtonItem>
-                                <barButtonItem key="rightBarButtonItem" title="address in details" id="f2Q-h4-kYa">
-                                    <color key="tintColor" red="0.18039215689999999" green="0.18039215689999999" blue="0.18039215689999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    <connections>
-                                        <action selector="addressInDetalisBtnClicked:" destination="-1" id="IY2-nN-hcf"/>
-                                    </connections>
-                                </barButtonItem>
-                            </navigationItem>
-                        </items>
-                    </navigationBar>
                 </tableView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
@@ -57,7 +38,6 @@
         </view>
     </objects>
     <resources>
-        <image name="add_address_icon" width="20" height="20"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

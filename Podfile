@@ -14,11 +14,17 @@ target 'SukkarApp' do
   pod 'IQKeyboardManagerSwift'
   pod 'CLTypingLabel'
   pod 'SwiftyJSON'
-  pod 'SwiftLint'
-
-
-
+  pod 'JGProgressHUD' 
   # pod 'SteviaLayout', '4.5.0'
+post_install do |installer|
+    installer.generated_projects.each do |project|
+        project.targets.each do |target|
+            target.build_configurations.each do |config|
+                config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '13.0'
+            end
+        end
+    end
+end
 
 
 

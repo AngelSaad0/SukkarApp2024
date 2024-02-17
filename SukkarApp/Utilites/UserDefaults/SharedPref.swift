@@ -4,7 +4,6 @@
 //
 //  Created by Engy on 12/31/2566 BE.
 //
-
 import UIKit
 
 class SharedPref {
@@ -56,3 +55,5 @@ class SharedPref {
         UserDefaults.standard.synchronize()
     }
 }
+
+

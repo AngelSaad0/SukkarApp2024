@@ -11,21 +11,31 @@ class CatagoriesVC: UIViewController {
     
     @IBOutlet weak var catagoriesCV: UICollectionView!
     @IBOutlet weak var productCV: UICollectionView!
-    var catagoriesList:[CategoriesCatM] = []
-    var productList:[ProductCatM]  = []
+    var catagoriesList: [CategoriesCatM] = []
+    var productList: [ProductCatM]  = []
+
     override func viewDidLoad() {
         super.viewDidLoad()
         initUI()
     }
-    override func viewWillAppear(_ animated: Bool) {
+
+    override func viewWillDisappear(_ animated: Bool) {
         mangeNavigation(isHidden: true)
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        navigationController?.setNavigationBarHidden(false, animated: false)
+
     }
 }
 
-//MARK: - INITUI() _____ CategoryVC
+//MARK: HELPER
+
 extension CatagoriesVC {
-    func initUI(){
-        initCV(cvs: [catagoriesCV,productCV])
+
+    func initUI() {
+
+        addNavBar(items: [.menu, .notifaction, .back],title: .catagories)
+        initCollectionView(cvs: [catagoriesCV,productCV])
         productList.append(ProductCatM(title: "Blood Glucose"))
         productList.append(ProductCatM(title: "Blood pressure "))
         productList.append(ProductCatM(title: "Medical headsets"))
@@ -34,8 +44,6 @@ extension CatagoriesVC {
         productList.append(ProductCatM(title: "Blood pressure "))
         productList.append(ProductCatM(title: "Medical headsets"))
         productList.append(ProductCatM(title: "Thermomerers"))
-        
-        
         catagoriesList.append(CategoriesCatM(title: "all", isSelected: false))
         catagoriesList.append(CategoriesCatM(title: "Diabetic Supplies", isSelected: false))
         catagoriesList.append(CategoriesCatM(title: "first catagory", isSelected: false))
@@ -43,11 +51,13 @@ extension CatagoriesVC {
         catagoriesList.append(CategoriesCatM(title: "Diabetic Supplies number 2", isSelected: false))
         
     }
-    func initCV(cvs:[UICollectionView]){
-        for cv in cvs {
-            cv.delegate = self
-            cv.dataSource = self
+
+    func initCollectionView(cvs:[UICollectionView]) {
+        for collectionView in cvs {
+            collectionView.delegate = self
+            collectionView.dataSource = self
         }
+
         cvs[0].registerCVNib(cell: CategoriesCVCell.self)
         cvs[1].registerCVNib(cell: ProductCVCell.self)
     }
@@ -81,12 +91,12 @@ extension CatagoriesVC:UICollectionViewDataSource{
 extension CatagoriesVC:UICollectionViewDelegateFlowLayout{
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         switch collectionView.tag {
-        case 0 :
+        case 0:
             let collectionViewHeight = collectionView.bounds.height
             let collectionViewWidth  = calculateCellWidht(text: catagoriesList[indexPath.row].title)
             return CGSize(width: collectionViewWidth, height: collectionViewHeight)
-        default :
-            let numberOfCellInRow:CGFloat = 2
+        default:
+            let numberOfCellInRow: CGFloat = 2
             let flowlayout = collectionViewLayout as!UICollectionViewFlowLayout
             let collectionViewWidth = collectionView.bounds.width
             let spacingBetweenCell = flowlayout.minimumLineSpacing*(numberOfCellInRow-1)
@@ -95,7 +105,7 @@ extension CatagoriesVC:UICollectionViewDelegateFlowLayout{
             return CGSize(width: width, height: width*0.809)
         }
     }
-    private func calculateCellWidht(text : String)-> CGFloat{
+    private func calculateCellWidht(text : String) -> CGFloat {
         let cell = Bundle.main.loadNibNamed("CategoriesCVCell", owner: self)?.first as! CategoriesCVCell
         cell.lbl.text = text
         let fittingSize = CGSize(width: UIView.layoutFittingCompressedSize.width, height: cell.bounds.height)
@@ -106,7 +116,7 @@ extension CatagoriesVC:UICollectionViewDelegateFlowLayout{
     }
 
 // MARK: - UICollectionViewDelegate
-extension CatagoriesVC:UICollectionViewDelegate{
+extension CatagoriesVC:UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         if collectionView.tag == 0 {
             for index in 0..<catagoriesList.count {

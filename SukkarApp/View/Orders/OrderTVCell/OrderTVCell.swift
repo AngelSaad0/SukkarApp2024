@@ -23,7 +23,7 @@ class OrderTVCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
 
-        mainView.addBorderView(color:Colors.CD9D9D9, width: 1)
+        mainView.addBorderView(color:Color.CD9D9D9, width: 1)
         mainView.addRadiusView(radius: 5)
     }
 
@@ -38,19 +38,19 @@ class OrderTVCell: UITableViewCell {
         switch cellData.orderStatus{
         case "Delivered" :
             cellName = "Delivered"
-            stautsLbl.textColor = UIColor(named: Colors.C24955C.rawValue)
-            arrowImg.tintColor  = UIColor(named: Colors.C24955C.rawValue)
+            stautsLbl.textColor = UIColor(named: Color.C24955C.rawValue)
+            arrowImg.tintColor  = UIColor(named: Color.C24955C.rawValue)
            
             return
         case "Pending" :
             cellName = "Pending"
-            stautsLbl.textColor = UIColor(named: Colors.CDB0000.rawValue)
-            arrowImg.tintColor  = UIColor(named: Colors.CDB0000.rawValue)
+            stautsLbl.textColor = UIColor(named: Color.CDB0000.rawValue)
+            arrowImg.tintColor  = UIColor(named: Color.CDB0000.rawValue)
             return
         default:
             cellName = "Processing"
-            stautsLbl.textColor = UIColor(named: Colors.C0079FB.rawValue)
-            arrowImg.tintColor  = UIColor(named: Colors.C0079FB.rawValue)
+            stautsLbl.textColor = UIColor(named: Color.C0079FB.rawValue)
+            arrowImg.tintColor  = UIColor(named: Color.C0079FB.rawValue)
             return
         }
     }

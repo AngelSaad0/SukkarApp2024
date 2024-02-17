@@ -12,7 +12,7 @@ class OrderDetailsCVCell: UICollectionViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        mainView.addBorderView(color: Colors.CE2E2E2, width: 1)
+        mainView.addBorderView(color: Color.CE2E2E2, width: 1)
         mainView.addRadiusView(radius: 10)
     }
 

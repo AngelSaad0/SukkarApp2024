@@ -8,6 +8,7 @@
 import UIKit
 
 class ChangePasswordVC: UIViewController {
+
     @IBOutlet weak var radiusBtn: UIButton!
     @IBOutlet  var radiusView: [UIView]!
 
@@ -15,15 +16,12 @@ class ChangePasswordVC: UIViewController {
         super.viewDidLoad()
         initUI()
     }
-    override func viewWillAppear(_ animated: Bool) {
-        mangeNavigation(isHidden: false)
-    }
-
 }
 extension ChangePasswordVC {
+    
     func initUI() {
+        addNavBar(items: [.back, .menu, .notifaction], title: .changePass)
         radiusBtn.addradiusBtn(radius: 7)
-        
         for view in radiusView {
             view.addRadiusView(radius: 7)
         }

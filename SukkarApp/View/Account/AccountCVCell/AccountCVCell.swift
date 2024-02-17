@@ -8,6 +8,7 @@
 import UIKit
 
 class AccountCVCell: UICollectionViewCell {
+
     @IBOutlet weak var accontLb: UILabel!
     @IBOutlet weak var accountImg: UIImageView!
     @IBOutlet weak var mainView: UIView!
@@ -15,18 +16,16 @@ class AccountCVCell: UICollectionViewCell {
         super.awakeFromNib()
        
     }
-    func initCell(cellData:AccountsM){
-        accontLb.text = cellData.title
+
+    func initCell(cellData:AccountsM) {
+        accontLb.text = cellData.tit.rawValue.localized
         accountImg.image = cellData.img
-        accontLb.textColor = (cellData.isSelcted) ?  UIColor(named: Colors.C0079FB.rawValue) :  UIColor(named: Colors.C535353.rawValue)
-        
+
     }
-
 }
-
-
-struct AccountsM{
-    var title:String
+struct AccountsM {
+    var tit: VcTitle
     var img:UIImage?
-    var isSelcted:Bool
 }
+
+

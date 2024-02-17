@@ -8,9 +8,9 @@
 import Foundation
 enum Direction: String, CaseIterable {
     
-    case Left = "Left"
-    case Right = "Right"
-    case Normal = "Normal"
-    case Center = "Center"
+    case left = "Left"
+    case right = "Right"
+    case normal = "Normal"
+    case center = "Center"
     
 }

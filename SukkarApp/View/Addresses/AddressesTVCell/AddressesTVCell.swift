@@ -36,7 +36,7 @@ class AddressesTVCell: UITableViewCell {
         cellIndex = index
         titleLbl.text = cellData.title
         detailsLbl.text = cellData.details
-        defaultLbl.textColor = UIColor(named: cellData.isDefault ?  Colors.C0079FB.rawValue : Colors.CBFBFBF.rawValue)
+        defaultLbl.textColor = UIColor(named: cellData.isDefault ?  Color.C0079FB.rawValue : Color.CBFBFBF.rawValue)
         defaultImg.image = UIImage(named: (cellData.isDefault) ? "default_sel": "default_usel")
         
     }
